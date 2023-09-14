@@ -13,9 +13,9 @@ router.get('/', (req,res) =>{
 router.get('/new', (req,res) =>{
     // res.send('usernewform')
     res.render("users/new",{firstName:'test'})
-    
-    
+
 })
+
 
 router.post('/', (req,res)=> {
     // const isValid = false
@@ -42,7 +42,7 @@ router
     res.send(`delete user with id ${req.params.id}`)
 })
 
-const users =[{name:"kyle"},{name:"aaa"}]
+const users =[{name:"kyle"},{name:"aaa"},{name:"3"}]
 
 router.param("id",(req,res,next,id)=>{
     //console.log(id)
