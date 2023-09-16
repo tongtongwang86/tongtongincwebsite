@@ -1,4 +1,7 @@
-FROM node:20-slim
+FROM nikolaik/python-nodejs:latest
+RUN pip install folium eviltransform schedule 
+
+# FROM node:20-slim
 WORKDIR /app
 COPY package.json /app
 RUN npm install
@@ -8,15 +11,9 @@ RUN npm install
 
 # RUN apt install python3-folium
 
-FROM python:3
-RUN pip install folium eviltransform schedule 
 
 
 
 COPY . /app
-
-
 # ENV PATH="${PATH}:/bin"
 CMD [ "npm" , "start"]
-
-
