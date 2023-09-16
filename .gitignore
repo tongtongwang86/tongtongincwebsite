@@ -1,4 +1,4 @@
-airtags.csv
-Items.data
-ItemsToTrack.py
-map.html
+Mapgen/Airtags.csv
+Mapgen/Items.data
+views/Map/map.html
+Mapgen/ItemsToTrack.py
