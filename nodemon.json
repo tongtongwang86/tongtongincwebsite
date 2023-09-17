@@ -1,4 +1,4 @@
 {
-    "ext": "js,json,hbs,html,ejs,usdz",
+    "ext": "js,json,hbs,html,ejs,usdz,py",
     "ignore": ["map.html"] 
 }

@@ -1,5 +1,6 @@
 FROM nikolaik/python-nodejs:latest
-RUN pip install folium eviltransform schedule 
+
+RUN pip install folium eviltransform schedule pandas
 
 # FROM node:20-slim
 WORKDIR /app

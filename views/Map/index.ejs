@@ -5,33 +5,188 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>map</title>
  <style>
+
+
+
+
+
     .center-shadow {
 
     border-radius: 17px;
-    height: 100vh; /* Center vertically within the viewport */
+    height: 90vh; /* Center vertically within the viewport */
+  
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 32px;
-    box-shadow: 0 0 40px 10px #0b0c1a;
-    transform: scale(.8);
-    margin-bottom: -4%;
     overflow: hidden;
+    border-radius: 15px;
+    /* box-shadow: 0 0 40px 10px #0b0c1a; */
+    box-shadow:
+    -10px -10px 30px 0px #ffffff11,
+    -6px -6px 10px 0px #ffffff11,
+    10px 10px 30px 0px #000000b9,
+    6px 6px 10px 0px #000000b9;
+
+    /* offset-x | offset-y | blur-radius | spread-radius | color */
+    transform: scale(.85);
+    margin-bottom: 0%;
+    background-color: #0b0c1a;
     
     }
+
+    .darkmode {
+        background-color: #182839; 
+    }  
+
+    .title {
+    line-height: 1;
+    color: #ded2b4;
+    font-family: serif;
+    font-size: 400%;
+    font-weight: 500;
+    font-stretch: 50%;
+    margin-bottom: 2%;
+    text-align: center;
+    transform: scale(.8);
+
+    }
+
+    .head2 {
+    color: #97b2cf;
+    font-family: "Gill Sans";
+    font-size: 100%;
+    font-weight: 350;
+    font-stretch: 50%;
+    margin-bottom: 0%;
+    text-align: center;
+    transform: scale(.8);
+
+    } 
+
+    .centerter{
+
+        color: #97b2cf;
+    font-family: serif;
+    font-stretch: 50%;
+    color: #97b2cf;
+    display: flex;    
+    font-size: 100%;
+    justify-content: center;
+    align-items: center;
+    transform: scale(.8);
+    /* margin-bottom: -10%; */
+    text-align: center;
+    }
+
+    .footer {
+    color: #97b2cf;
+    font-family: "Gill Sans";
+    font-size: 90%;
+    font-weight: 350;
+    font-stretch: 50%;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    text-align: center;
+    }
+
+
+
+    .custom-btn {
+    padding: 10px 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    background-color: #1c2d40;
+    border-radius: 10px;
+    margin-left: 2%;
+
+    
+    }
+   
+    .slideleft {
+    border: none;
+    color: #8b8b8b;
+    z-index: 1;
+    }
+
+    .slideleft:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    box-shadow:
+    -7px -7px 20px 0px #ffffff11,
+    -4px -4px 5px 0px #ffffff11,
+    7px 7px 20px 0px #0000007d,
+    4px 4px 5px 0px #0000007d;
+    transition: all 0.3s ease;
+    border-radius: 10px;
+    
+    }
+
+    .slideleft:hover {
+    color: #efeac8;
+   
+    }
+
+    .slideleft:hover:after {
+    left: 0;
+    width: 100%;
+    }
+
+    .slideleft:active {
+    top: 2px;
+    
+    }
+
+
+
+
  </style>
     
 </head>
-<body>
+<body class="darkmode">
 
-  
-    <h>hehe noice password no yu kan trak airteg</h>
+
+    <div class="title">tracking items pro max ultra</div>
+    <div class="head2">-CODED BY TONG TONG WANG + MINOR HIJINKS BY PEI JIN ZHOU-</div>
+
+    <div class= "centerter">
+        This is a website that we made like literally 2 days ago to track various apple devices,
+    mainly a stolen pair of AirPods and a not at all
+    important AirTag. And no, this website is totally not intended for some greater purpose that you, a commoner, are not privy to :)</div>
+
+
+
+
+<!--   
+    <h>hehe noice password no yu kan trak airteg</h> -->
     <div class="center-shadow" >
     <%- include ('map.html') %> 
+    
     </div>
 
+    <a href="/">
+    <button href="/" class="custom-btn slideleft" >Back</button>
+    </a>
 
+    
+
+
+
+
+    <!-- <p><a href="/">go bacc</a></p> -->
         
+
+    <div class="footer">- PLEASE DO NOT DOX US. THANK YOU - © TONG TONG INC. 2023 -</div>
+
 
 </body>
 </html> 
