@@ -3,67 +3,236 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> 3d stuff
-    </title>
+    <title> 3D Files </title>
 
     <style>
-
+        @font-face {
+            font-family: "Profbens";
+            src: url(fonts/profbens-eaome.otf) ;
+        }
 
         body {
-    background-color: rgb(11, 43, 54);  
+            background: #1c1d2c;
     }  
- 
-        .list {
+    @font-face {
+            font-family: "PlayfairDisplay";
+            src: url(fonts/PlayfairDisplay-Italic-VariableFont_wght.ttf) ;
+        }
+        
 
-        border-radius: 17px;
-        height: 20vh; /* Center vertically within the viewport */
+
+
+
+    .custom-btn {
+    padding: 10px 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    background-color: #1c2d40;
+    border-radius: 10px;
+    margin-left: 2%;
+    margin-bottom: 5%;
+    box-shadow:
+            -10px -10px 30px 1px #ffffff11,
+            -6px -6px 10px 2px #ffffff11,
+            10px 10px 30px 1px #000000b9,
+            6px 6px 10px 2px #000000b9;
+
+    
+    }
+   
+    .slideleft {
+    border: none;
+    color: #8b8b8b;
+    z-index: 1;
+    }
+
+    .slideleft:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    box-shadow: inset -4px -4px 8px rgba(255, 255, 255, 0.135),
+            inset 8px 8px 16px rgba(0, 0, 0, 0.605);
+    transition: all 0.3s ease;
+    border-radius: 10px;
+    
+    }
+
+    .slideleft:hover {
+    color: #efeac8;
+   
+    }
+
+    .slideleft:hover:after {
+    left: 0;
+    width: 100%;
+    }
+
+    .slideleft:active {
+    top: 2px;
+    
+    }
+
+    .name{
+        font-family: "PlayfairDisplay";
+        color: #a9a9a9;
+        font-size: 70px;
+        letter-spacing: 1.5px;
+    }
+
+    .title {
+        font-family: "PlayfairDisplay";
+        color: #a9a9a9;
+        font-size: 500%;
+        text-align: left;
+        margin-left: 10%;
+        margin-top: 5%;
+    }
+    .vstack {
+
+        /* border-radius: 17px;
+        height: 20vh; 
         width: 80%;
-        display: flex;
+
         justify-content: center;
         align-items: center;
         border-radius: 32px;
         box-shadow: 0 0 40px 10px #0b0c1a;
         transform: scale(.9);
         margin-bottom: -4%;
-        /* transform: translate(50%,0%); */
-        /* margin: auto; */
+      
         margin-top: 10%;
         margin-right: auto;
-        margin-left: auto;    
-        font-family: "Papyrus" ;
+        margin-left: auto;    */
+
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
         /* overflow: hidden; */
         }
 
         .icon {
             
             width: 20vh;
-            align: right;
+            
             margin-right: -5%;    
         }
-        .text {
+        .hstack {
             /* margin-left: 10%;    */
+            display: flex;
+            flex-direction: row;
             text-align: left;
 
         }
+
+    .box {
+        border-radius: 32px;
+        box-shadow: 0 0 40px 10px #0b0c1a;
+        background: #282a3f;
+        transform: scale(.8);
+        box-shadow:
+            -10px -10px 30px 1px #ffffff11,
+            -6px -6px 10px 2px #ffffff11,
+            10px 10px 30px 1px #000000b9,
+            6px 6px 10px 2px #000000b9;
+        /* margin-right: 10%;
+        margin-left: 10%;  */
+        /* overflow-x: auto; */
+
+
+    }
     </style>
 </head>
 <body>
-    <h1> lok at da tree dee fiels </h1>
-    <h1> tap da tree dee fiels to see </h1>
-    <h1> must need iphone to wrok </h1>
+    <div class="title"> 3D Files</div>
+ 
+
+    <div class="box">
 
     
-        <div class="list">
-        <div class="text"> RevoluteV2</div>
+        <div class="vstack">
+            <div class="name">
+                RevoluteV2</div>
+        <div class="hstack">
 
         <a href="/usdz/RevoluteV2.2.usdz" rel="ar" target="_blank">
-            <img  class="icon" align="right" src="/usdz/Preview/revolute.png" alt="" />
+            <img  class="icon" align="center" src="/usdz/Preview/revolute.png" alt="" />
+        </a>
+
+        <a href="/usdz/RevoluteV2.2 magnetics.usdz" rel="ar" target="_blank">
+            <img  class="icon" align="center" src="/usdz/Preview/revolute magnetics.png" alt="" />
         </a>
         </div>
 
-    <p><a href="/">go bacc</a></p>
+        </div>
+
+      
+    </div>
+
+    <div class="box">
+
+        <div class="vstack">
+            <div class="name">
+                Maxwell</div>
+        <div class="hstack">
+
+        <a href="/usdz/maxwell.usdz" rel="ar" target="_blank">
+            <img  class="icon" align="center" src="/usdz/Preview/maxwell.png" alt="" />
+        </a>
+        </div>
+        </div>
+
+    </div>
 
 
 
+    <div class="box">
+
+        <div class="vstack">
+            <div class="name">
+                IronHolder</div>
+        <div class="hstack">
+
+        <a href="/usdz/ironholder.usdz" rel="ar" target="_blank">
+            <img  class="icon" align="center" src="/usdz/Preview/IronHolder.png" alt="" />
+        </a>
+        </div>
+        </div>
+
+    </div>
+
+    <div class="box">
+
+        <div class="vstack">
+            <div class="name">
+                Keyboard</div>
+        <div class="hstack">
+
+        <a href="/usdz/KeyboardExploded.usdz" rel="ar" target="_blank">
+            <img  class="icon" align="center" src="/usdz/Preview/Keyboard exploded.png" alt="" />
+        </a>
+        </div>
+        </div>
+
+    </div>
+
+
+
+
+
+    <a href="/">
+        <button class="custom-btn slideleft" >Back</button>
+        </a>
 </body>
 </html>

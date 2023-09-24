@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>map</title>
+    <title>Map</title>
  <style>
 
 
@@ -103,6 +103,11 @@
     background-color: #1c2d40;
     border-radius: 10px;
     margin-left: 2%;
+    box-shadow:
+            -10px -10px 30px 1px #ffffff11,
+            -6px -6px 10px 2px #ffffff11,
+            10px 10px 30px 1px #000000b9,
+            6px 6px 10px 2px #000000b9;
 
     
     }
@@ -121,11 +126,8 @@
     top: 0;
     right: 0;
     z-index: -1;
-    box-shadow:
-    -7px -7px 20px 0px #ffffff11,
-    -4px -4px 5px 0px #ffffff11,
-    7px 7px 20px 0px #0000007d,
-    4px 4px 5px 0px #0000007d;
+    box-shadow: inset -4px -4px 8px rgba(255, 255, 255, 0.135),
+            inset 8px 8px 16px rgba(0, 0, 0, 0.605);
     transition: all 0.3s ease;
     border-radius: 10px;
     
@@ -174,7 +176,7 @@
     </div>
 
     <a href="/">
-    <button href="/" class="custom-btn slideleft" >Back</button>
+    <button class="custom-btn slideleft" >Back</button>
     </a>
 
     
