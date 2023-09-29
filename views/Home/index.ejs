@@ -5,7 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tongtong.inc</title>
     <!-- <link rel="shortcut icon" type="image/" href="../icons/favicon.ico"> -->
-    <link rel="shortcut icon" type="image/png" href="icons/favicon9.png">
+    <!-- <link rel="shortcut icon" type="image/png" href="icons/favicon9.png"> -->
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="icons/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="icons/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="icons/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="icons/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="icons/apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="icons/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="icons/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="icons/apple-touch-icon-152x152.png" />
+    <link rel="icon" type="image/png" href="icons/favicon-196x196.png" sizes="196x196" />
+    <link rel="icon" type="image/png" href="icons/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="icons/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="icons/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="icons/favicon-128.png" sizes="128x128" />
+    <meta name="application-name" content="&nbsp;"/>
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta name="msapplication-TileImage" content="mstile-144x144.png" />
+    <meta name="msapplication-square70x70logo" content="mstile-70x70.png" />
+    <meta name="msapplication-square150x150logo" content="mstile-150x150.png" />
+    <meta name="msapplication-wide310x150logo" content="mstile-310x150.png" />
+    <meta name="msapplication-square310x310logo" content="mstile-310x310.png" />
+
     <style>
         @font-face {
             font-family: "Profbens";
@@ -15,165 +36,268 @@
             font-family: "PlayfairDisplay";
             src: url(fonts/PlayfairDisplay-Italic-VariableFont_wght.ttf) ;
         }
-        body {
-
-        background-color: #1c1d2c;
-        /* background-color: #182839;  */
-        font-family: 'Open Sans', sans-serif;
-        
-        
-        }
-      
-        
-      
-        .container {
-           
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 15vh; 
-        }
-
-        .card {
-        display: flex;
-        height: 280px;
-        width: 200px;
-        background-color: #1c1d2c;
-        border-radius: 25px;
-        box-shadow: -1rem 0 3rem #000;
-        /*   margin-left: -50px; */
-        transition: 0.4s ease-out;
-        position: relative;
-        left: 0px;
-        }
-
-        .card:not(:first-child) {
-            margin-left: -40px;
-            
-        }
-
-        .card:hover {
-        transform: translateY(-20px);
-        transition: 0.4s ease-out;
-        }
-
-        .card:hover ~ .card {
-        position: relative;
-        left: 50px;
-        transition: 0.4s ease-out;
-        }
-
-        .title {
-        color: white;
-        font-weight: 300;
-        position: absolute;
-        left: 20px;
-        top: 15px;
-        }
-
-        .bar {
-        position: absolute;
-        top: 100px;
-        left: 75px;
-        height: 50px;
-        width: 150px;
-        
-        
-        }
-
-        .emptybar {
-        /* background-color: #1c1d2c; */
-        width: 100%;
-        height: 100%;
-        }
-
-        .filledbar {
-        position: relative;
-        top: 50px;
-        /* z-index: 3; */
-        width: 50px;
-        height: 100%;
-        transform: scale(2.3);
-        border-radius: 10%;
-        /* background: rgb(0,154,217); */
-        /* background: linear-gradient(90deg, rgba(0,154,217,1) 0%, rgba(217,147,0,1) 65%, rgba(255,186,0,1) 100%); */
-        
-        transition: 0.6s ease-out;
-        }
-
-        .card:hover .filledbar {
-        /* width: 120px;
-        height: 100px; */
-        transform: scale(3.5);
-        transition: 0.4s ease-out;
-        }
-
-        .circle {
-        position: absolute;
-        top: 150px;
-        left: calc(50% - 60px);
-        }
-
-        .stroke {
-        stroke: white;
-        stroke-dasharray: 360;
-        stroke-dashoffset: 360;
-        transition: 0.6s ease-out;
-        }
-
-        svg {
-        fill: #ffffff;
-        stroke-width: 2px;
-        }
-
-        .card:hover .stroke {
-        stroke-dashoffset: 100;
-        transition: 0.6s ease-out;
-        }
-
-        .card:active {
-        top: 5px;
-        
-        }
-
         .maintitle {
-          margin-top: 10%;
-          font-size: 6vh;
-          text-align: center;
-          font-family: "Profbens";
-          font-weight: bold;
-          color: #ded2b4;
-        }
+  /*           margin-bottom: 5%; */
+  /*    height:50vh; */
+  font-size: 5vh;
+  text-align: center;
+  font-family: "Profbens";
+  font-weight: bold;
+  color: #ded2b4;
+
+}
+.title {
+  width: 65%;
+  color: white;
+  /* margin-left: -40px; */
+  /* margin-left: 30%; */
+  font-weight: 300;
+  text-align: left;
+  /* outline-style:auto; */
+ 
+}
+
+/* *{
+  outline-style:auto;
+} */
+
+body {
+  height: 100vh;
+  /* width: 100vw; */
+  display: grid;
+  place-items: center;
+  background: #1c1d2c;
+
+}
+
+.conic {
+  display: flex;
+  text-decoration: none;
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
+  position: relative;
+  width: 195px;
+  height: 280px;
+  box-sizing: border-box;
+  display: grid;
+  place-items: center;
+  /*   margin: 0 8px; */
+  cursor: pointer;
+  left: 0px;
+  transition: all 0.3s ease;
+  color: #b8b8b8;
+  transform: scale(1);
+  /*   top: 0px; */
+  border-radius: 30px;
+  box-shadow: 0 0 3rem #000;
+
+  /*   filter: drop-shadow(4px 4px 5px rgba(50, 50,50, .6)); */
+}
+
+#flex-scroll {
+
+  /* padding: 0px 10px; */
+  /* padding-left: 100vw; */
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+#scrollcontainer {
+
+/* padding: 0px 50px; */
+/* padding-left: 100vw; */
+min-width: 880px;
+width: 98vw;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-wrap: nowrap;
+
+
+
+}
+
+#container {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  /*   margin-top: 1%; */
+  flex-wrap: nowrap;
+  height: 500px;
+  width: 98vw;
+  /* width: 100%; */
+  overflow: auto;
+
+  
+  /* overflow-x: scroll; */
+  
+  /* scroll-snap-type: x proximity; */
+  /* width: 600px; */
+  /*   top: 60px; */
+
+  /*   left: calc(50% - 300px); */
+  /*   display: flex; */
+}
+
+
+
+
+.conic .squircle {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+
+  --bg: #1c1d2c;
+}
+
+.conic:active {
+  box-shadow: 0 0 3rem #f5dfa2;
+  /* filter: drop-shadow(0px 0px 5px rgba(255, 255, 255, 0.2))
+    drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.605)); */
+  transition: 0.01s ease;
+  top: 5px;
+}
+.filledbar {
+  /*         position: relative;
+        top: 50px; */
+  /* z-index: 3; */
+  width: 50px;
+  height: 50px;
+  transform: scale(2.3);
+  /*         border-radius: 10%; */
+  /* background: rgb(0,154,217); */
+  /* background: linear-gradient(90deg, rgba(0,154,217,1) 0%, rgba(217,147,0,1) 65%, rgba(255,186,0,1) 100%); */
+
+  transition: 0.6s ease-out;
+}
+
+.conic:hover .filledbar {
+  /* width: 120px;
+  height: 100px; */
+  transform: scale(3.2);
+  transition: 0.4s ease-out;
+}
+
+.bar {
+  display: grid;
+  margin-bottom: 20%;
+  place-items: center;
+}
+
+.conic:not(:first-child) {
+  margin-left: -40px;
+}
+
+.conic:hover {
+  /*   color: #efeac8;
+  transform: scale(0.98); */
+
+  transform: scale(1.05) translateY(-20px);
+  transition: 0.4s ease-out;
+
+  /*    filter: 
+    drop-shadow(4px 4px 5px rgba(50, 50,50, .6))
+   drop-shadow(-5px -5px 15px rgba(0, 0, 0, .8)); */
+  box-shadow: 0 0 3rem #f5dfa2;
+}
+
+.conic:hover ~ .conic {
+  position: relative;
+  left: 50px;
+  transition: 0.4s ease-out;
+
+
+}
+
+.vstack {
+
+  /* display: grid;
+  justify-content: center; */
+  align-items: center;
+  text-decoration: none;
+  /* width: 150px;
+  height: 100px; */
+  /* height: 100vw; */
+  /* width:10px; */
+  
+}
+
     </style>
 </head>
 <body>
-   <div class="maintitle">
-    Tongtong.inc
-   </div>
-    <div class="container" >
-      <a href="/track" class="card"> 
-       
-          <h3 class="title">Track</h3>
-          <div class="bar">
-            <img src="images/map.png" alt="FCC Logo" class="filledbar" />
-         
-          
+  <div class="vstack">
+    <div class="maintitle">
+      Tongtong.inc
+    </div>
+
+    <div id="container">
+      <div id="flex-scroll">
+        <div id="scrollcontainer">
+        
+      <a href="/track" class="conic">
+
+        <svg viewbox="0 0 640 920" class="squircle">
+          <path d="M0 100C0 20 20 0 100 0L540 0C620 0 640 20 640 100L640 820C640 900 620 920 540 920L100 920C20 920 0 900 0 820L0 100Z" fill="var(--bg)"></path>
+        </svg>
+        <h3 class="title">Track</h3>
+        <div class="bar">
+          <img src="images/map.png" alt="MapIcon" class="filledbar" />
         </div>
       </a>
-      <a href="/3D" class="card">
+      <a href="/3D" class="conic">
 
-     
-          <h3 class="title">3D</h3>
-          <div class="bar">
+        <svg viewbox="0 0 640 920" class="squircle">
+          <path d="M0 100C0 20 20 0 100 0L540 0C620 0 640 20 640 100L640 820C640 900 620 920 540 920L100 920C20 920 0 900 0 820L0 100Z" fill="var(--bg)"></path>
+        </svg>
+        <h3 class="title">3D</h3>
+        <div class="bar">
+          <img src="images/seethroughbox.svg" alt="RealityIcon" class="filledbar" />
+        </div>
+      </a>
+      <a href="/onestepfurther" class="conic">
 
-            <img src="images/seethroughbox.svg" alt="FCC Logo" class="filledbar"/>
-            <!-- <div class="filledbar"></div> -->
-          </div>
-        
-          </a>
-      </div>
-    <!-- <h>velcom to mine webse ite :)</h>
-    <p><a href="/3d">3d cool stuff</a></p>
-    <p><a href="/track">traking</a></p> -->
+        <svg viewbox="0 0 640 920" class="squircle">
+          <path d="M0 100C0 20 20 0 100 0L540 0C620 0 640 20 640 100L640 820C640 900 620 920 540 920L100 920C20 920 0 900 0 820L0 100Z" fill="var(--bg)"></path>
+        </svg>
+        <h3 class="title">todo:osf</h3>
+        <div class="bar">
+          <img src="images/osf.png" alt="RealityIcon" class="filledbar" />
+        </div>
+      </a>
+
+      <a href="/calendar" class="conic">
+
+        <svg viewbox="0 0 640 920" class="squircle">
+          <path d="M0 100C0 20 20 0 100 0L540 0C620 0 640 20 640 100L640 820C640 900 620 920 540 920L100 920C20 920 0 900 0 820L0 100Z" fill="var(--bg)"></path>
+        </svg>
+        <h3 class="title">calendar</h3>
+        <div class="bar">
+          <img src="images/calendar.svg" alt="RealityIcon" class="filledbar" />
+        </div>
+      </a>
+
+      <a href="/about" class="conic">
+
+        <svg viewbox="0 0 640 920" class="squircle">
+          <path d="M0 100C0 20 20 0 100 0L540 0C620 0 640 20 640 100L640 820C640 900 620 920 540 920L100 920C20 920 0 900 0 820L0 100Z" fill="var(--bg)"></path>
+        </svg>
+        <h3 class="title">about/<br>contact
+        </h3>
+        <div class="bar">
+          <img src="images/contact.svg" alt="RealityIcon" class="filledbar" />
+        </div>
+      </a>
+
+    </div>
+    </div>
+  </div>
+    
+
+  </div>
+
+  </div>
 </body>
 </html>

@@ -16,3 +16,8 @@ chmod 700 CVSlogger.sh
 - [x] plot csv values only when there is change 
 - [x] fix index.html
 - [x] dockerize
+- [ ] conic curves
+- [ ] calendar page
+- [ ] one step further page
+- [ ] about page
+- [ ] company logo top left

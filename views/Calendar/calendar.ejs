@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA_Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Map Login</title>
+    <title>Calendar</title>
 
     <style>
         /* *{
@@ -21,17 +21,15 @@
             place-items: center; */
             
             }  
-              .contanier{
 
-                display: grid;
-            place-items: center;
-              }
             .fillspace{
-              width: 90vw;
+               display: grid;
+            place-items: center;
+               width: 90vw;
               height: 80vh;
-              /* outline-style:auto;  */
+              /* outline-style:auto; 
               margin-top: 5%;
-              margin-bottom: 10%;
+              margin-bottom: 10%;  */
             }
             
             input {
@@ -180,11 +178,11 @@
   top: 3px;
 }
 
-
+/* 
 a{
   width: 150px;
   height: 100px;
-}
+} */
 
             
 .hstack{
@@ -213,12 +211,32 @@ a{
 
     }
 
-    @font-face {
+#open-web-calendar{
+
+  /* margin-left: 10%; */
+  /* background: #151621; */
+  /* background-color: #151621; */
+  border-radius: 15px;
+  /* outline: auto; */
+  width: 80vw;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+    
+#vstack{
+  display: grid;
+  justify-content: center;
+  width: 99vw;
+  /* outline: auto; */
+
+}
+/* *{outline: auto;} */
+@font-face {
             font-family: "Profbens";
             src: url(fonts/profbens-eaome.otf) ;
         }
  
-        .topnav {
+.topnav {
   overflow: hidden;
   /* outline: auto; */
   height: 5em;
@@ -243,31 +261,30 @@ a{
   /* box-shadow: 0 0 3rem #f5dfa2; */
 
 }
-    
+
     </style>
 </head>
 <body>
+
   <div class="topnav">
     <a href="/" >Tongtong.inc</a>
-
   </div>
+  
+ 
+ <div class="fillspace">
 
-  <div class="contanier">
-
+ <div id="vstack">
+ 
   <div class="title">
 
 
-    Find my airpods
+    Calendar
   </div>
-  <embed class="fillspace" type="text/html" src="airpodsmap.html" style = "border: none; border-radius: 10px">
-    
-    <div id="login"  >
-      <form name='form-login' action="/track" method="POST">
-        <input type="password" name="passWord" value="<%= locals.passWord %>" id"pass" placeholder="Password">
-        <input type="submit" value="Enter">
-      </form>
-    <div>
-        
+<iframe id="open-web-calendar" 
+    src="https://open-web-calendar.hosted.quelltext.eu/calendar.html?url=https%3A%2F%2Fp112-caldav.icloud.com%2Fpublished%2F2%2FMTcwOTk5MTk1MDUxNzA5OelM_8yjcgEWIuICpGXhtcfgBjVf15G0GIJ6ijaXZecr5o64EXaLtV38W-HgkgPIf_HVv8E9vMUh0-wjkGuUxOY&amp;skin=dhtmlxscheduler_contrast_black.css&amp;start_of_week=su&amp;css=.dhx_cal_navline%2C%20.dhx_scale_bar%2C%20.dhx_cal_container%2C%20.dhx_cal_header%20%7Bbackground-color%3A%20%23141526%3B%7D%0A.event%2C%20.dhx_cal_tab.active%2C%20.dhx_cal_tab.active%3Ahover%20%7Bbackground-color%3A%20%2359728f%3B%7D%20.dhx_month_head%2C%20.dhx_cal_tab%2C%20.dhx_cal_today_button%20%7Bcolor%3A%20%2359728f%3B%7D%20.dhx_cal_tab%2C%20.dhx_cal_tab.active%20%7Bborder-color%3A%20%2359728f%3B%7D%0A.dhx_scale_holder_now%2C%20.dhx_now%20.dhx_month_head%2C%20.dhx_now%20.dhx_month_body%20%7B%20background-color%3A%20%2316182b%3B%7D%0A.dhx_month_body%2C%20.dhx_month_head%2C%20.dhx_cal_container%20%7B%20background-color%3A%20%230e0f1c%3B%20%7D%0A.dhx_after%20.dhx_month_body%2C%20.dhx_before%20.dhx_month_body%2C%20.dhx_after%20.dhx_month_head%2C%20.dhx_before%20.dhx_month_head%20%7B%20background-color%3A%20%230c0d17%3B%20%7D%0A&amp;loader="
+    sandbox="allow-scripts allow-same-origin allow-top-navigation"
+    allowTransparency="true" scrolling="no" 
+    frameborder="0" height="600px" width="100%"></iframe>
       
       <div class="hstack">
         <a href="/" class="hstack">
@@ -281,8 +298,9 @@ a{
               </div>
             </a>
 
-          </div>
         </div>
+      </div>
+    </div>
   
 </body>
 
