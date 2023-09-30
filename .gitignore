@@ -5,3 +5,4 @@ views/Map/map.html
 Mapgen/ItemsToTrack.py
 Mapgen/airpoditem.py
 Mapgen/__pycache__
+password.js
