@@ -9,9 +9,10 @@ app.use(express.urlencoded({ extended: true}))
 // app.use(express.favicon("/public/icons/favicon.ico"));
 // app.use(favicon(__dirname + '/icons/favicon.ico'));
 // app.use('/images/favicon', express.static('icons/favicon7.png'));
-import { passgen } from 'password.js';
+//import { passgen } from './password.mjs';
+const passwords = require('./password.js');
 
-var passwords = passgen();
+//var passwords = passgen();
 
 app.set('view engine', 'ejs')
 
