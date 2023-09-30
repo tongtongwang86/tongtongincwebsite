@@ -1,4 +1,5 @@
 Mapgen/Airtags.csv
+Airtagsold.csv
 Mapgen/Items.data
 views/Map/map.html
 Mapgen/ItemsToTrack.py
