@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Created with Vectornator (http://vectornator.io/) -->
+<svg height="100%" stroke-miterlimit="10" style="fill-rule:nonzero;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;" version="1.1" viewBox="0 0 1000 1000" width="100%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:vectornator="http://vectornator.io" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs/>
+<g id="Layer-1" vectornator:layerName="Layer 1">
+<g opacity="1" vectornator:layerName="Mail">
+<path d="M0 96.4958L1000 96.4958L1000 96.4958L1000 880L1000 880L0 880L0 880L0 96.4958L0 96.4958Z" fill="#f1efe1" fill-opacity="0.85" fill-rule="nonzero" opacity="0" stroke="none" vectornator:layerName="rect"/>
+<path d="M149.21 880L860.079 880C948.456 880 1000 828.456 1000 731.991L1000 244.945C1000 148.78 948.154 97.2366 850.649 97.2366L139.779 97.2366C51.5439 97.2366 0 148.48 0 244.945L0 731.991C0 828.755 51.8442 880 149.21 880ZM150.909 787.41C112.191 787.41 91.3294 767.989 91.3294 727.089L91.3294 249.846C91.3294 209.387 112.191 189.826 150.909 189.826L848.949 189.826C887.208 189.826 908.669 209.387 908.669 250.147L908.669 727.389C908.669 767.989 887.208 787.41 848.949 787.41L150.909 787.41ZM500.529 610.257C534.439 610.257 566.487 596.085 598.717 564.295L950.582 218.176L892.596 159.61L548.778 499.305C530.82 517.122 516.025 524.788 500.529 524.788C484.735 524.788 470.08 516.821 452.283 499.305L107.263 158.408L48.9769 216.835L402.205 564.295C434.574 596.085 466.32 610.257 500.529 610.257ZM886.232 807.601L944.357 749.036L665.719 472.798L607.453 530.925L886.232 807.601ZM56.403 749.335L114.669 807.902L393.607 530.925L335.181 472.798L56.403 749.335Z" fill="#f1efe1" fill-opacity="0.85" fill-rule="nonzero" opacity="1" stroke="none" vectornator:layerName="path"/>
+</g>
+</g>
+</svg>
