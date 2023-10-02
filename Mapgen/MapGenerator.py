@@ -1,7 +1,6 @@
 
 #import item serial number
 from ItemsToTrack import *
-# print (len(items))
 
 #import additional libraries
 import csv
@@ -12,6 +11,8 @@ import schedule
 import time
 import pandas as pd
 
+
+# user defined parameters wahoo
 # 172800000 is 2 days in miliseconds lmao
 timeinhour = 48
 timeCutoff = timeinhour * 3600000
@@ -84,29 +85,22 @@ def formatCoord(serialNumber):
 
 
         for row in csv_reader:
-            # deltatime = latesttime-int((f'{row["locationtimestamp"]}'))
+    
             deltatime = latesttime-int((f'{row["locationtimestamp"]}'))
-            # print (deltatime)
             if line_count == 0:
-
-
-
-
                 line_count += 1
-            elif str(f'\t{row["serialnumber"]}').strip() == str(serialNumber) and deltatime < timeCutoff:
-
+                
+                
+            elif str(f'\t{row["serialnumber"]}').strip() == str(serialNumber) and deltatime < timeCutoff and float(f'\t{row["locationhorizontalaccuracy"]}')<100:
+#            if less than time cutoff, and matches is correct serial number, and is accurate, then do that below
                 if line_count < 3:
                     currentlist = eviltransform.gcj2wgs_exact(float(f'\t{row["locationlatitude"]}'),float(f'\t{row["locationlongitude"]}'))
                     coordinates.append(currentlist)
-                # deltatime = latesttime-int((f'{row["locationtimestamp"]}'))
-                currentlist = eviltransform.gcj2wgs_exact(float(f'\t{row["locationlatitude"]}'),float(f'\t{row["locationlongitude"]}'))
-                # print(coordinates)
-                
-                coordinates.append(currentlist)
 
-                # currentlist = currentlist + ((str(f'{row["datetime"]}')),)
-                # currentlist = currentlist + (f'{row["locationtimestamp"]}',)
-                # currentlist = currentlist + (f'{row["name"]}',)
+                currentlist = eviltransform.gcj2wgs_exact(float(f'\t{row["locationlatitude"]}'),float(f'\t{row["locationlongitude"]}'))
+                coordinates.append(currentlist)
+                
+#                connect lines
                 group.add_child(
                     folium.PolyLine(
                     smooth_factor=3,
@@ -114,44 +108,22 @@ def formatCoord(serialNumber):
                     color=rgba_to_hex(hex_to_rgb(lineColor)[0]*opacity_gen(deltatime,opacityinterval), hex_to_rgb(lineColor)[1]*opacity_gen(deltatime,opacityinterval), hex_to_rgb(lineColor)[2]*opacity_gen(deltatime,opacityinterval), .7),
                     weight=5,
                      popup=str(f'\t{row["name"]}'),
-                    )
-
-                    )
+                    ))
+#               add markers
+                    
                 group.add_child(
                     folium.CircleMarker(eviltransform.gcj2wgs_exact(float(f'\t{row["locationlatitude"]}'),float(f'\t{row["locationlongitude"]}')), tooltip=str(f'\t{row["datetime"]}'),
                     radius=circleradius ,
                     color=rgba_to_hex(hex_to_rgb(markerColor)[0]*opacity_gen(deltatime,opacityinterval), hex_to_rgb(markerColor)[0]*opacity_gen(deltatime,opacityinterval), hex_to_rgb(markerColor)[0]*opacity_gen(deltatime,opacityinterval), 1))
-
-
-
                     )
 
-                coordinates.pop(0)
 
-                # print(rgba_to_hex(1, 0.4, 0.6, .2))
-                # print(round(deltatime/opacityinterval))
-                # print(opacity_gen(deltatime,opacityinterval))
-                
-#                coordinates.append(currentlist)
+                coordinates.pop(0)
                 line_count += 1
 
 
     currentlist = eviltransform.gcj2wgs_exact(float(f'\t{row["locationlatitude"]}'),float(f'\t{row["locationlongitude"]}'))
-
-
-#        group.add_child(
-#            folium.PolyLine(
-#                        smooth_factor=3,
-#                        locations=coordinates,
-#                        color=rgba_to_hex(hex_to_rgb(lineColor)[0]*opacity_gen(deltatime,opacityinterval), hex_to_rgb(lineColor)[1]*opacity_gen(deltatime,opacityinterval), hex_to_rgb(lineColor)[2]*opacity_gen(deltatime,opacityinterval), 1),
-#                        weight=5,
-#                         tooltip=str(f'\t{row["name"]}'),
-#                        )
-#
-#    )
     return coordinates
-
-# print(formatCoord(items[0]))
 
 
 
@@ -159,32 +131,28 @@ def formatCoord(serialNumber):
 # Create an empty list to store FeatureGroup instances
 feature_groups = []
 
-# Define the number of FeatureGroup instances you want to create
+# loop amount of items in array human name
 n = len(humanname)
 
-# Create and append n FeatureGroup instances to the list
+# make n feature group
 for i in range(n):
     feature_group_name = humanname[i]  # Name for each FeatureGroup
     feature_group = folium.FeatureGroup(name=feature_group_name)
     feature_groups.append(feature_group)
 
-# Access and use the stored FeatureGroup instances
 
-# print()
 looop = 0
 
 
 # Create a map
 m = folium.Map(tiles="cartodbdark_matter")
 
-
+# Add markers and line to feature group instance n times
 for group in feature_groups:
     formatCoord(items[looop])
     m.add_child(group)
     looop += 1
-# Add the stored FeatureGroup instances to the map
-# for group in feature_groups:
-#     m.add_child(group)
+
 
 # Add a LayerControl to the map, allowing users to toggle the layers
 m.fit_bounds(m.get_bounds(), padding=(30, 30))
@@ -193,4 +161,4 @@ folium.LayerControl().add_to(m)
 
 # Display the map
 m.save("views/Map/map.html")
-# print (hex_to_rgb(lineColor)[0])
+
