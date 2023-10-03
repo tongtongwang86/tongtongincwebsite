@@ -2,237 +2,210 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA_Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> 3D Files </title>
+    <title>about</title>
+    <link rel="stylesheet" href="style/mainstyle.css">
+<style>
 
-    <style>
-        @font-face {
-            font-family: "Profbens";
-            src: url(fonts/profbens-eaome.otf) ;
-        }
-
-        body {
-            background: #1c1d2c;
-    }  
-    @font-face {
-            font-family: "PlayfairDisplay";
-            src: url(fonts/PlayfairDisplay-Italic-VariableFont_wght.ttf) ;
-        }
-        
-
-
-
-
-    .custom-btn {
-    padding: 10px 25px;
-    font-family: 'Lato', sans-serif;
-    font-weight: 500;
-    background: transparent;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    position: relative;
-    display: inline-block;
-    background-color: #1c2d40;
-    border-radius: 10px;
-    margin-left: 2%;
-    margin-bottom: 5%;
-    box-shadow:
-            -10px -10px 30px 1px #ffffff11,
-            -6px -6px 10px 2px #ffffff11,
-            10px 10px 30px 1px #000000b9,
-            6px 6px 10px 2px #000000b9;
-
-    
-    }
-   
-    .slideleft {
-    border: none;
-    color: #8b8b8b;
-    z-index: 1;
-    }
-
-    .slideleft:after {
-    position: absolute;
-    content: "";
-    width: 0;
-    height: 100%;
-    top: 0;
-    right: 0;
-    z-index: -1;
-    box-shadow: inset -4px -4px 8px rgba(255, 255, 255, 0.135),
-            inset 8px 8px 16px rgba(0, 0, 0, 0.605);
-    transition: all 0.3s ease;
-    border-radius: 10px;
-    
-    }
-
-    .slideleft:hover {
-    color: #efeac8;
-   
-    }
-
-    .slideleft:hover:after {
-    left: 0;
-    width: 100%;
-    }
-
-    .slideleft:active {
-    top: 2px;
-    
-    }
-
-    .name{
-        font-family: "PlayfairDisplay";
-        color: #a9a9a9;
-        font-size: 70px;
-        letter-spacing: 1.5px;
-    }
 
     .title {
-        font-family: "PlayfairDisplay";
-        color: #a9a9a9;
-        font-size: 500%;
-        text-align: left;
-        margin-left: 10%;
-        margin-top: 5%;
+    line-height: 1;
+    color: #ded2b4;
+    font-family: serif;
+    font-size: 300%;
+    font-weight: 500;
+    font-stretch: 50%;
+    text-align: center;
     }
-    .vstack {
 
-        /* border-radius: 17px;
-        height: 20vh; 
-        width: 80%;
-
-        justify-content: center;
-        align-items: center;
-        border-radius: 32px;
-        box-shadow: 0 0 40px 10px #0b0c1a;
-        transform: scale(.9);
-        margin-bottom: -4%;
-      
-        margin-top: 10%;
-        margin-right: auto;
-        margin-left: auto;    */
-
-        
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        
-        /* overflow: hidden; */
-        }
-
-        .icon {
-            
-            width: 20vh;
-            
-            margin-right: -5%;    
-        }
-        .hstack {
-            /* margin-left: 10%;    */
-            display: flex;
-            flex-direction: row;
-            text-align: left;
-
-        }
-
-    .box {
-        border-radius: 32px;
-        box-shadow: 0 0 40px 10px #0b0c1a;
-        background: #282a3f;
-        transform: scale(.8);
-        box-shadow:
-            -10px -10px 30px 1px #ffffff11,
-            -6px -6px 10px 2px #ffffff11,
-            10px 10px 30px 1px #000000b9,
-            6px 6px 10px 2px #000000b9;
-        /* margin-right: 10%;
-        margin-left: 10%;  */
-        /* overflow-x: auto; */
+    .maintext{
+font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+color: #97b2cf;
+font-size: 140%;
 
 
-    }
-    </style>
+}
+
+    .maintext uem{
+  color: #bcbcaec8;
+
+}
+.maintext a{
+  width: 150px;
+  height: 100px;
+  text-decoration: underline;
+  color: #ded2b4;
+
+}
+
+.gridcontainer{
+
+    justify-items: center;
+    width:85dvw;
+    display: grid;
+    margin-top:6em;
+    display: grid;
+  grid-gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+  grid-auto-flow: row dense;
+
+
+  }
+
+  .icon{
+    
+    max-height: 100%;
+    max-width: 300px;
+    width: auto;
+  height: auto;
+  }
+  .box{
+
+
+    background-color: #161925;
+    border-radius: 15px;
+    width: fit-content;
+    height: fit-content;
+    overflow: hidden;
+
+    box-shadow:
+            -10px -10px 30px 1px #ffffff08,
+            -6px -6px 10px 2px #ffffff08,
+            10px 10px 30px 1px #00000056,
+            6px 6px 10px 2px #00000056;
+
+  }
+  .vstack{
+    justify-content: center;
+  }
+    
+</style>
 </head>
 <body>
-    <div class="title"> 3D Files</div>
- 
-
-    <div class="box">
-
-    
-        <div class="vstack">
-            <div class="name">
-                RevoluteV2</div>
-        <div class="hstack">
-
-        <a href="/usdz/RevoluteV2.2.usdz" rel="ar" target="_blank">
-            <img  class="icon" align="center" src="/usdz/Preview/revolute.png" alt="" />
-        </a>
-
-        <a href="/usdz/RevoluteV2.2 magnetics.usdz" rel="ar" target="_blank">
-            <img  class="icon" align="center" src="/usdz/Preview/revolute magnetics.png" alt="" />
-        </a>
+    <div class="background">
+        <div class="topnav">
+            <a href="/" >Tongtong.inc</a>
         </div>
+        
+        <div class="gridcontainer">
+            <div class="vstack">
 
-        </div>
+                <div class="heading title">
+                    3d models
+                    
+        
+                </div>
+                <div class="text maintext">
+                    Tap on image for AR preview (only works on iPhone)
+                </div>
+            </div>
 
-      
+            
+
+            <div class="box">
+                <div class="vstack">
+                    <div class="text maintext">
+                        Revolute
+                    </div>
+                    <a href="/usdz/RevoluteV2.2.usdz" rel="ar" target="_blank">
+                        <img  class="icon" align="center" src="/usdz/Preview/revolute.png" alt="" />
+                    </a>
+                </div>
+                
+            </div>
+            
+
+
+
+            <div class="box">
+                <div class="vstack">
+                    <div class="text maintext">
+                        Revolute Magnetics
+                    </div>
+                    <a href="/usdz/RevoluteV2.2 magnetics.usdz" rel="ar" target="_blank">
+                        <img  class="icon" align="center" src="/usdz/Preview/revolute magnetics.png" alt="" />
+                    </a>
+                </div>
+                
+            </div>
+
+
+
+
+
+            <div class="box">
+                <div class="vstack">
+                    <div class="text maintext">
+                        Keyboard exploded view
+                    </div>
+                    <a href="/usdz/KeyboardExploded.usdz" rel="ar" target="_blank">
+                        <img  class="icon" align="center" src="/usdz/Preview/Keyboard exploded.png" alt="" />
+                    </a>
+                </div>
+                
+            </div>
+            
+
+            <div class="box">
+                <div class="vstack">
+                    <div class="text maintext">
+                        Soldering Station
+                    </div>
+                    <a href="/usdz/ironholder.usdz" rel="ar" target="_blank">
+                        <img  class="icon" align="center" src="/usdz/Preview/IronHolder.png" alt="" />
+                    </a>
+                </div>
+                
+            </div>
+
+
+
+            <div class="box">
+                <div class="vstack">
+                    <div class="text maintext">
+                        Maxwell
+                    </div>
+                    <a href="/usdz/maxwell.usdz" rel="ar" target="_blank">
+                        <img  class="icon" align="center" src="/usdz/Preview/maxwell.png" alt="" />
+                    </a>
+                </div>
+                
+            </div>
+            
+
+
+
+
+
+        
+        
+
+        </div>    
+
+
+
+
+
+        <a href="/" class="hstack">
+            
+            <div class="conic backbutton" >
+
+                <svg viewbox="0 0 1000 1000" class="squircle">
+                  <path d="M0 450C0 300 50 250 200 250L800 250C950 250 1000 304.78 1000 450L1000 550C1000 700 950 750 800 750L200 750C50 750 0 700 0 550L0 450Z" fill="var(--bg)"></path>
+                </svg>
+                Back
+              </div>
+            </a>
+
+        
+
     </div>
+    <div class="dropoff">
 
-    <div class="box">
-
-        <div class="vstack">
-            <div class="name">
-                Maxwell</div>
-        <div class="hstack">
-
-        <a href="/usdz/maxwell.usdz" rel="ar" target="_blank">
-            <img  class="icon" align="center" src="/usdz/Preview/maxwell.png" alt="" />
-        </a>
-        </div>
-        </div>
-
+            
     </div>
-
-
-
-    <div class="box">
-
-        <div class="vstack">
-            <div class="name">
-                IronHolder</div>
-        <div class="hstack">
-
-        <a href="/usdz/ironholder.usdz" rel="ar" target="_blank">
-            <img  class="icon" align="center" src="/usdz/Preview/IronHolder.png" alt="" />
-        </a>
-        </div>
-        </div>
-
-    </div>
-
-    <div class="box">
-
-        <div class="vstack">
-            <div class="name">
-                Keyboard</div>
-        <div class="hstack">
-
-        <a href="/usdz/KeyboardExploded.usdz" rel="ar" target="_blank">
-            <img  class="icon" align="center" src="/usdz/Preview/Keyboard exploded.png" alt="" />
-        </a>
-        </div>
-        </div>
-
-    </div>
-
-
-
-
-
-    <a href="/">
-        <button class="custom-btn slideleft" >Back</button>
-        </a>
 </body>
+
 </html>
