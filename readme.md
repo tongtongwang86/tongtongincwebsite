@@ -30,7 +30,7 @@ chmod 700 CVSlogger.sh
 - [x] fix index.html
 - [x] dockerize
 - [ ] conic curves
-- [ ] calendar page
+- [x] calendar page
 - [ ] one step further page
 - [ ] about page
 - [ ] company logo top left
