@@ -286,7 +286,7 @@ function executeEverySecond() {
       progressBar.style.width = `${80-millisecondsToYears(deltadate)}%`;
 
      // console.log('seconds%', secdonspercent);
-     myDiv.innerText = `${yearsToDays(millisecondsToYears(deltadate))} days ${80-millisecondsToYears(deltadate)}%`;
+     myDiv.innerText = `${yearsToDays(millisecondsToYears(deltadate))} days ${Math.round((80-millisecondsToYears(deltadate))*1000)/1000}%`;
     // console.log('seconds%', millisecondsToYears(deltadate));
     // console.log('seconds%', yearsToDays(millisecondsToYears(deltadate)));
     

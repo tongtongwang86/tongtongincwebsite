@@ -1,0 +1,330 @@
+<!-- <!DOCTYPE html>
+<html>
+  <head>
+    <title>My EJS Page</title>
+  </head>
+  <body>
+    <h1>i bought iphone 15 pro on  <%= orderdata.order_date %>!</h1>
+    <p> its status is: <%= orderdata.current_status %>.</p>
+    
+  </body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA_Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iPhone15</title>
+    <link rel="stylesheet" href="style/mainstyle.css">
+<style>
+    .textcontainer{
+        padding-top: 5em;
+    }
+
+    .title {
+    line-height: 1;
+    color: #ded2b4;
+    font-family: serif;
+    font-size: 300%;
+    font-weight: 500;
+    font-stretch: 50%;
+    text-align: center;
+    }
+
+    .subtitle {
+    line-height: 1;
+    color: #ded2b4;
+    font-family: serif;
+    font-size: 200%;
+    font-weight: 500;
+    font-stretch: 50%;
+    text-align: center;
+    }
+
+    .maintext{
+font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+color: #97b2cf;
+font-size: 140%;
+
+}
+
+    .maintext uem{
+  color: #bcbcaec8;
+  /* text-decoration: none; */
+}
+
+
+.maintext a{
+  width: 150px;
+  height: 100px;
+  text-decoration: underline;
+  color: #ded2b4;
+}
+    
+.comment {
+  margin-top: 1em;
+  margin-bottom: 3em;
+  /* margin-left: 2em; */
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: #97b2cf;
+font-size: 80%;
+/* outline: auto; */
+text-align: center;
+/* overflow-wrap: break; */
+
+/* flex-grow: 4;  */
+/* overflow-wrap:; */
+/* word-break: break-all; */
+overflow-wrap: break-word; 
+width: 100%;
+/* min-width: min-content; */
+/* width: fit-content; */
+}
+.daystext {
+  /* margin-top: 1em; */
+  margin-left: 2em;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: #bcbcaec8;
+font-size: 100%;
+}
+
+
+#progress {
+      width: 0%;
+    max-width:100%;
+      background-color: #2b2c42;
+      height: 30px;
+   transition: width .3s;
+/*    dispay:grid; */
+  
+/*    outline:auto; */
+
+    }
+
+.progressoutline{
+  margin-top: 2em;
+  /* margin-left: 1em; */
+  overflow: hidden;
+  height: 30px;
+  width:100%;
+/*   border: 1px solid #4d4d5c; */
+  border-radius:10px;
+  box-shadow: 0 0 10px #ffe49c;
+  animation: pulse-opacity-bg 10s cubic-bezier(0.455, 0.03, 0.515, 0.955) -.4s infinite;
+/*   outline:auto; */
+  
+}
+
+
+.head{
+  z-index: 1;
+/*   width: 1em; */
+/*   background-color: red; */
+  height: 100%;
+  width:1em;
+  background-image: linear-gradient(to right,#5f583700 ,#c3b99d);
+
+  float: right;
+  animation: pulse-opacity 5s cubic-bezier(0.455, 0.03, 0.515, 0.955) -.4s infinite;
+}
+
+
+@keyframes pulse-opacity {
+  0% {
+    opacity: .3;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: .3;
+  }
+}
+
+@keyframes pulse-opacity-bg {
+  0% {
+    box-shadow: 0 0 20px #e1d8bd;
+  }
+  70% {
+    box-shadow: 0 0 5px #f7eccd;
+  }
+  100% {
+    box-shadow: 0 0 20px #e1d8bd;
+  }
+}
+</style>
+</head>
+<body>
+    <div class="background">
+        <div class="topnav">
+            <a href="/" >Tongtong.inc</a>
+        </div>
+
+        <div class="textcontainer" >
+            <div class="heading title">
+                iPhone 15 status
+               
+            </div>
+            <div class="hstack">
+            <img src="images/iphone15proside.png" alt="RealityIcon" style=" width: 30%; height: 10%; margin-top: 1em;"/>
+            <div class="heading subtitle">
+              
+              <%= orderdata.deliveryDate %>
+          </div>
+
+          </div>
+            <div class="hstack" >
+
+              <div class="progressoutline">
+                <div id="progress">
+                 <div class="head">
+                 
+                </div>
+                </div>
+                  </div>
+
+                
+
+            </div>
+
+            <div class="hstack" style=" justify-content: space-between; margin-top: 0.5em;">
+              <div class="comment" >
+                Placed
+             </div>
+             <div class="comment">
+              Processing
+           </div>
+           <div class="comment" style=" ">
+            Prepare for Shipment
+         </div>
+         <div class="comment">
+          Shipped
+       </div>
+       <div class="comment">
+        Delivered 
+     </div>
+            </div>
+
+
+            
+
+        </div>
+            
+
+        <a href="/" class="hstack">
+            
+            <div class="conic backbutton" >
+
+                <svg viewbox="0 0 1000 1000" class="squircle">
+                  <path d="M0 450C0 300 50 250 200 250L800 250C950 250 1000 304.78 1000 450L1000 550C1000 700 950 750 800 750L200 750C50 750 0 700 0 550L0 450Z" fill="var(--bg)"></path>
+                </svg>
+                Back
+              </div>
+            </a>
+
+        
+
+    </div>
+    <div class="dropoff">
+
+            
+    </div>
+
+
+
+
+    <script>
+
+
+function millisecondsToYears(milliseconds) {
+  const millisecondsInYear = 31557600000; // 365.25 days in milliseconds
+  return milliseconds / millisecondsInYear;
+}
+
+function yearsToDays(years) {
+  const daysInYear = 365;
+  let totalDays = 0;
+
+  for (let year = 1; year <= years; year++) {
+    const currentYearDays = (year % 4 === 0 && (year % 100 !== 0 || year % 400 === 0)) ? daysInYear + 1 : daysInYear;
+    totalDays += currentYearDays;
+  }
+
+  return totalDays;
+}
+
+
+var lifeInYears = 80;
+var BirthYear = 2007;
+
+
+function executeEverySecond() {
+  console.log('This code will run every second.');
+  let counter = 0;
+
+  setInterval(() => {
+    
+    const currentstatus = '<%= orderdata.current_status %>';
+    const progressBar = document.getElementById('progress');
+    console.log(currentstatus);
+
+    if( currentstatus == "PLACED") {
+      progressBar.style.width = `0%`;
+    }
+
+    if( currentstatus == "PROCESSING") {
+      progressBar.style.width = `25%`;
+    }
+
+    if( currentstatus == "PREPARED_FOR_SHIPMENT") {
+      progressBar.style.width = `50%`;
+    }
+
+    if( currentstatus == "SHIPPED") {
+      progressBar.style.width = `75%`;
+    }
+    if( currentstatus == "DELIVERED") {
+      progressBar.style.width = `100%`;
+    }
+
+
+
+    // const currentDate = new Date();
+    
+    // const currentTimeMilliseconds = new Date().getTime();
+    // const specificDate = new Date(BirthYear+lifeInYears, 8, 22);
+    
+    // var myDiv = document.getElementById('dayleft');
+    // const deltadate = specificDate - currentTimeMilliseconds
+    
+    // const seconds = ('0' + currentDate.getSeconds()).slice(-2);
+    // const secdonspercent = Math.round(seconds / 60 *100) ;
+    // const secondsprecentunround = seconds / 60 *100;
+          
+    
+    // const currentTimeSeconds = Math.floor(currentTimeMilliseconds / 1000);
+    
+    //  const progressBar = document.getElementById('progress');
+      // progressBar.style.width = `${80-millisecondsToYears(deltadate)}%`;
+
+     // console.log('seconds%', secdonspercent);
+     
+    // console.log('seconds%', millisecondsToYears(deltadate));
+    // console.log('seconds%', yearsToDays(millisecondsToYears(deltadate)));
+    
+    // console.log('daysleft:', yearsToDays(millisecondsToYears(deltadate));
+    
+  }, 1000); 
+}
+
+
+
+executeEverySecond();
+
+
+    </script>
+</body>
+
+</html>

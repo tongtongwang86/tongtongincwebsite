@@ -1,6 +1,6 @@
-FROM nikolaik/python-nodejs:latest
+FROM nikolaik/python-nodejs:python3.11-nodejs20
 
-RUN pip install eviltransform schedule pandas branca requests Jinja2 Numpy
+RUN pip install eviltransform schedule pandas branca requests Jinja2 Numpy 
 RUN pip install build
 
 

@@ -8,3 +8,7 @@ Mapgen/__pycache__
 password.js
 node_modules
 .DS_Store
+ordertrack/orderkey.py
+ordertrack/appleordershippingstatus.json
+ordertrack/orderstatusoutput.json
+__pycache__

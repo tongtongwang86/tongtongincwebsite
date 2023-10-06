@@ -1,18 +1,14 @@
 const express = require('express')
-// var favicon = require('serve-favicon');
 const app = express()
 const { exec } = require("child_process");
 
 app.use(express.static("public"))
-// app.use('/static', express.static('public'))
 app.use(express.urlencoded({ extended: true}))
-// app.use(express.favicon("/public/icons/favicon.ico"));
-// app.use(favicon(__dirname + '/icons/favicon.ico'));
-// app.use('/images/favicon', express.static('icons/favicon7.png'));
-//import { passgen } from './password.mjs';
+
+//import correct password from file 'password.js'
 const passwords = require('./password.js');
 
-//var passwords = passgen();
+
 
 app.set('view engine', 'ejs')
 
@@ -35,7 +31,21 @@ app.get('/calendar',(req, res) => {
 }) 
 
 
-
+app.get('/iphone15', (req, res) => {
+//    const orderdata = require('./ordertrack/orderstatusoutput.json');
+//  // fetch data from database or API
+////  const users = [
+////    { id: 1, name: 'John Doe', email: 'john@example.com' },
+////    { id: 2, name: 'Jane Doe', email: 'jane@example.com' },
+////    { id: 3, name: 'Bob Smith', email: 'bob@example.com' },
+////  ];
+//  res.json(users);
+    var orderdata = require('./ordertrack/orderstatusoutput.json');
+//    console.log(orderdata)
+//    const data = { name: 'John Doe', age: 30 };
+    res.render('order/index', { orderdata })
+    
+});
 
 app.get('/3d',(req, res) => {
     res.render('3D/index')
@@ -92,6 +102,20 @@ function updatemap() {
         }
         console.log(`stdout: ${stdout}`);
     });
+    
+    exec("python3 ordertrack/appleordershippingstatus.py", (error, stdout, stderr) => {
+        if (error) {
+            console.log(`error: ${error.message}`);
+            return;
+        }
+        if (stderr) {
+            console.log(`stderr: ${stderr}`);
+            return;
+        }
+        console.log(`stdout: ${stdout}`);
+    });
+    
+    
   }
   updatemap();
 
