@@ -32,5 +32,5 @@ chmod 700 CVSlogger.sh
 - [ ] conic curves
 - [x] calendar page
 - [ ] one step further page
-- [ ] about page
-- [ ] company logo top left
+- [x] about page
+- [x] company logo top left
