@@ -30,6 +30,8 @@ chmod 700 CVSlogger.sh
 - [x] fix index.html
 - [x] dockerize
 - [ ] conic curves
+- [x] iphone15 status page
+- [ ] change log git commit sync
 - [x] calendar page
 - [ ] one step further page
 - [x] about page
