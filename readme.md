@@ -29,10 +29,16 @@ chmod 700 CVSlogger.sh
 - [x] plot csv values only when there is change 
 - [x] fix index.html
 - [x] dockerize
-- [ ] conic curves
 - [x] iphone15 status page
-- [ ] change log git commit sync
 - [x] calendar page
-- [ ] one step further page
 - [x] about page
 - [x] company logo top left
+- [ ] one step further page
+- [ ] change log git commit sync
+- [ ] conic curves
+- [ ] youtube vid download
+- [ ] suggestion tracker
+- [ ] ai??
+- [ ] ptable
+- [ ] calculator
+- [ ] weather
