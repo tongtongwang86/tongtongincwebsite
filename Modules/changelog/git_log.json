@@ -1,5 +1,23 @@
 [
     {
+        "sha": "c2674993d06a22748d3c71e2b30fceb30b0575be",
+        "author": "tongtongwang86",
+        "date": "2023-10-09T14:14:37Z",
+        "message": "git ignore"
+    },
+    {
+        "sha": "980072063e584d544b705f4285184906a6ec1fb4",
+        "author": "tongtongwang86",
+        "date": "2023-10-09T14:12:17Z",
+        "message": "Rearranged files, Added changelog to about page"
+    },
+    {
+        "sha": "9de18c7343784649c1a36cdcfd71d2449bdfed52",
+        "author": "tongtongwang86",
+        "date": "2023-10-09T05:05:46Z",
+        "message": "changed git ignore"
+    },
+    {
         "sha": "b627a62f7faeeab043afc9583583fbf620183781",
         "author": "Tong tong",
         "date": "2023-10-09T08:29:11Z",

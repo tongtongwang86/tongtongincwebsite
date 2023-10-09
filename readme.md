@@ -34,8 +34,8 @@ chmod 700 CVSlogger.sh
 - [x] about page
 - [x] company logo top left
 - [ ] one step further page
-- [ ] change log git commit sync
-- [ ] conic curves
+- [x] change log git commit sync
+- [x] conic curves
 - [ ] youtube vid download
 - [ ] suggestion tracker
 - [ ] ai??

@@ -344,7 +344,23 @@ function updatechangelog() {
       // for (let i = 0; i < changeloglength; i++) {
         for (let i = 0; i < maxlength; i++) {
               const message = changelog[i].message;
-              const date = changelog[i].date;
+
+              const utcTimestamp = changelog[i].date;
+              const utcDate = new Date(utcTimestamp);
+              const options = {
+              year: 'numeric',
+              weekday: 'short',
+              month: 'short',
+              day: 'numeric',
+              hour: '2-digit',
+              minute: '2-digit',
+              second: '2-digit'
+              // timeZoneName: 'short'
+               };
+               const date = utcDate.toLocaleDateString(undefined, options);
+
+
+              // const date = changelog[i].date;
               const author = changelog[i].author;
 
               const listItem = document.createElement('li');
