@@ -3,6 +3,7 @@ Airtagsold.csv
 Mapgen/Items.data
 views/Map/map.html
 Mapgen/ItemsToTrack.py
+public/airpodsmap.html
 Mapgen/airpoditem.py
 Mapgen/__pycache__
 password.js
