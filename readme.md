@@ -42,3 +42,5 @@ chmod 700 CVSlogger.sh
 - [ ] ptable
 - [ ] calculator
 - [ ] weather
+- [ ] change log
+- [ ] members
