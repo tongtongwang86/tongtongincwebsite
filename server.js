@@ -32,17 +32,9 @@ app.get('/calendar',(req, res) => {
 
 
 app.get('/iphone15', (req, res) => {
-//    const orderdata = require('./ordertrack/orderstatusoutput.json');
-//  // fetch data from database or API
-////  const users = [
-////    { id: 1, name: 'John Doe', email: 'john@example.com' },
-////    { id: 2, name: 'Jane Doe', email: 'jane@example.com' },
-////    { id: 3, name: 'Bob Smith', email: 'bob@example.com' },
-////  ];
-//  res.json(users);
-    var orderdata = require('./ordertrack/orderstatusoutput.json');
-//    console.log(orderdata)
-//    const data = { name: 'John Doe', age: 30 };
+
+    var orderdata = require('./Modules/ordertrack/orderstatusoutput.json');
+
     res.render('order/index', { orderdata })
     
 });
@@ -52,32 +44,49 @@ app.get('/3d',(req, res) => {
 }) 
 
 app.get('/about',(req, res) => {
-    res.render('About/about')
-}) 
+    
+    
+    var changelog = require('./Modules/changelog/git_log.json');
+    
+    res.render('About/about', { changelog })
+})
+
 app.get('/onestepfurther',(req, res) => {
     res.render('onestep/osf')
 }) 
 
 app.post('/track' , (req,res) => {
     
+    
+    
 
 if (req.body.passWord == passwords){
-        // res.push({passWord: req.body.passWord })
-        // res.redirect(`/map/index`)
-        //res.render('home/index')
-        // res.sendFile(__dirname + '/views/map/map.html');
-        res.render('Map/index')
-        // res.sendFile(__dirname + '/views/map/map.html' , { root: '.' });
-
+    res.render('Map/index')
     }else{
         console.log("error")
-        //res.render('map/password',{passWord: req.body.passWord })
         res.render('Map/password')
     }
 
 })
 
-function updatemap() {
+function updatePerDay(){
+
+    exec("python3 modules/changelog/gitlog.py", (error, stdout, stderr) => {
+        if (error) {
+            console.log(`error: ${error.message}`);
+            return;
+        }
+        if (stderr) {
+            console.log(`stderr: ${stderr}`);
+            return;
+        }
+       console.log(`stdout: ${stdout}`);
+        // console.log("gitlog");
+    });
+
+}
+
+function updatePerMinute() {
     exec("python3 Mapgen/MapGenerator.py", (error, stdout, stderr) => {
         if (error) {
             console.log(`error: ${error.message}`);
@@ -87,7 +96,8 @@ function updatemap() {
             console.log(`stderr: ${stderr}`);
             return;
         }
-        console.log(`stdout: ${stdout}`);
+//        console.log(`stdout: ${stdout}`);
+        console.log("mapgen");
     });
 
 
@@ -100,10 +110,11 @@ function updatemap() {
             console.log(`stderr: ${stderr}`);
             return;
         }
-        console.log(`stdout: ${stdout}`);
+//        console.log(`stdout: ${stdout}`);
+        console.log("mapgenairpodsonly");
     });
     
-    exec("python3 ordertrack/appleordershippingstatus.py", (error, stdout, stderr) => {
+    exec("python3 Modules/ordertrack/appleordershippingstatus.py", (error, stdout, stderr) => {
         if (error) {
             console.log(`error: ${error.message}`);
             return;
@@ -112,15 +123,23 @@ function updatemap() {
             console.log(`stderr: ${stderr}`);
             return;
         }
-        console.log(`stdout: ${stdout}`);
+//        console.log(`stdout: ${stdout}`);
+        console.log("orderstatus");
     });
     
     
+    
+    
+    
+    
   }
-  updatemap();
 
-  const interval = setInterval(updatemap, 60000);
+  updatePerMinute();
 
+  updatePerDay();
+
+  const interval = setInterval(updatePerMinute, 60000);
+  const intervalDay = setInterval(updatePerDay, 86400000);
 
 
 

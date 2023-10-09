@@ -83,7 +83,8 @@ data = {
 json_data = json.dumps(data, indent=4)
 
 # Specify the file path
-file_path = "ordertrack/orderstatusoutput.json"
+#file_path = "ordertrack/orderstatusoutput.json"
+file_path = os.path.join(os.path.dirname(__file__), "orderstatusoutput.json")
 
 with open(file_path, 'w') as file:
     file.write(json_data)

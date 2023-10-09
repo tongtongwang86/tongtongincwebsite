@@ -1,4 +1,4 @@
 {
     "ext": "js,json,hbs,html,ejs,usdz,py",
-    "ignore": ["map.html","airpodsmap.html","orderstatusoutput.json"]
+    "ignore": ["map.html","airpodsmap.html","orderstatusoutput.json","git_log.json"]
 }

@@ -120,6 +120,8 @@ font-size: 100%;
     box-shadow: 0 0 20px #5c070e;
   }
 }
+
+
 </style>
 </head>
 <body>
@@ -211,6 +213,36 @@ font-size: 100%;
 
              </div>
 
+
+             <div class="textcontainer">
+
+
+              <div class="heading title">
+               Website Changelog
+            </div>
+
+
+              <ul class="text maintext" id="changelist" >
+
+              </ul>
+
+
+
+             </div>
+
+
+
+
+
+
+
+
+
+
+
+
+             
+
         </div>
             
 
@@ -239,6 +271,11 @@ font-size: 100%;
     <script>
 
 
+
+
+
+
+
 function millisecondsToYears(milliseconds) {
   const millisecondsInYear = 31557600000; // 365.25 days in milliseconds
   return milliseconds / millisecondsInYear;
@@ -262,7 +299,7 @@ var BirthYear = 2007;
 
 
 function executeEverySecond() {
-  console.log('This code will run every second.');
+
   let counter = 0;
 
   setInterval(() => {
@@ -285,19 +322,49 @@ function executeEverySecond() {
      const progressBar = document.getElementById('progress');
       progressBar.style.width = `${80-millisecondsToYears(deltadate)}%`;
 
-     // console.log('seconds%', secdonspercent);
      myDiv.innerText = `${yearsToDays(millisecondsToYears(deltadate))} days ${Math.round((80-millisecondsToYears(deltadate))*1000)/1000}%`;
-    // console.log('seconds%', millisecondsToYears(deltadate));
-    // console.log('seconds%', yearsToDays(millisecondsToYears(deltadate)));
-    
-    // console.log('daysleft:', yearsToDays(millisecondsToYears(deltadate));
-    
+  
+
+
+
+     
+
+
   }, 1000); 
 }
 
 
+function updatechangelog() {
+  console.log("aa")
+  const changelist = document.getElementById('changelist');
+     const changelog = <%- JSON.stringify(changelog) %>;
+     console.log(changelog)
+     const changeloglength = changelog.length;
+     const maxlength = 10;
+      // for (let i = 0; i < changeloglength; i++) {
+        for (let i = 0; i < maxlength; i++) {
+              const message = changelog[i].message;
+              const date = changelog[i].date;
+              const author = changelog[i].author;
+
+              const listItem = document.createElement('li');
+              listItem.innerHTML = `<strong>Author:</strong> ${author}<br><strong>Date:</strong> ${date}<br><strong>Message:</strong> ${message}<br><br>`;
+
+              changelist.appendChild(listItem);
+              console.log(`Message ${i + 1}: ${message}`);
+      }
+}
 
 executeEverySecond();
+
+updatechangelog();
+
+
+
+
+
+
+
 
 
     </script>

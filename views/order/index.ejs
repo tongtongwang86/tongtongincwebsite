@@ -261,14 +261,14 @@ var BirthYear = 2007;
 
 
 function executeEverySecond() {
-  console.log('This code will run every second.');
+  // console.log('This code will run every second.');
   let counter = 0;
 
   setInterval(() => {
     
     const currentstatus = '<%= orderdata.current_status %>';
     const progressBar = document.getElementById('progress');
-    console.log(currentstatus);
+    // console.log(currentstatus);
 
     if( currentstatus == "PLACED") {
       progressBar.style.width = `0%`;
