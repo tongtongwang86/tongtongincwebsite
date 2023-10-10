@@ -43,6 +43,11 @@ app.get('/3d',(req, res) => {
     res.render('3D/index')
 }) 
 
+app.get('/members/sally',(req, res) => {
+    res.render('Members/Sally')
+}) 
+
+
 app.get('/about',(req, res) => {
     
     
@@ -80,7 +85,7 @@ function updatePerDay(){
             console.log(`stderr: ${stderr}`);
             return;
         }
-       console.log(`stdout: ${stdout}`);
+       console.log(`${stdout}`);
         // console.log("gitlog");
     });
 
@@ -97,7 +102,7 @@ function updatePerMinute() {
             return;
         }
 //        console.log(`stdout: ${stdout}`);
-        console.log("mapgen");
+        console.log(`${stdout}`);
     });
 
 
@@ -111,7 +116,7 @@ function updatePerMinute() {
             return;
         }
 //        console.log(`stdout: ${stdout}`);
-        console.log("mapgenairpodsonly");
+        console.log(`${stdout}`);
     });
     
     exec("python3 Modules/ordertrack/appleordershippingstatus.py", (error, stdout, stderr) => {
@@ -124,7 +129,7 @@ function updatePerMinute() {
             return;
         }
 //        console.log(`stdout: ${stdout}`);
-        console.log("orderstatus");
+        console.log(`${stdout}`);
     });
     
     

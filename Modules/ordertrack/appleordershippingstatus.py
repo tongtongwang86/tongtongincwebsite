@@ -88,3 +88,5 @@ file_path = os.path.join(os.path.dirname(__file__), "orderstatusoutput.json")
 
 with open(file_path, 'w') as file:
     file.write(json_data)
+
+print(f"OrderStatus saved to {file_path}")

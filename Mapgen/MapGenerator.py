@@ -162,3 +162,5 @@ folium.LayerControl().add_to(m)
 # Display the map
 m.save("views/Map/map.html")
 
+print("MapGenMap saved")
+

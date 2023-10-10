@@ -66,4 +66,4 @@ if __name__ == "__main__":
     with open(output_file, 'w') as json_file:
         json.dump(all_commits, json_file, indent=4)
 
-    print(f"Git log saved to {output_file}")
+    print(f"GitLog saved to {output_file}")

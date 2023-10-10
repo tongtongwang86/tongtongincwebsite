@@ -13,3 +13,4 @@ ordertrack/orderkey.py
 ordertrack/appleordershippingstatus.json
 ordertrack/orderstatusoutput.json
 __pycache__
+*.json

@@ -164,4 +164,7 @@ folium.LayerControl().add_to(m)
 
 # Display the map
 m.save("public/airpodsmap.html")
+
+print("AirpodOnlyMap saved")
+
 # print (hex_to_rgb(lineColor)[0])

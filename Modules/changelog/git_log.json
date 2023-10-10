@@ -1,5 +1,11 @@
 [
     {
+        "sha": "3ad64dd3e66da56ae3f1fad79440ee5365309294",
+        "author": "tongtongwang86",
+        "date": "2023-10-09T14:27:56Z",
+        "message": "changelog timestamp according to client device timezone"
+    },
+    {
         "sha": "c2674993d06a22748d3c71e2b30fceb30b0575be",
         "author": "tongtongwang86",
         "date": "2023-10-09T14:14:37Z",
