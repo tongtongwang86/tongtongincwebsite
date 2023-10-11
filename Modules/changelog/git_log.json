@@ -1,5 +1,11 @@
 [
     {
+        "sha": "f377fb69f004b1bb547a1c42b1b29ac6eb3ad5c4",
+        "author": "tongtongwang86",
+        "date": "2023-10-10T11:32:27Z",
+        "message": "started working on members page, Modularized python scripts"
+    },
+    {
         "sha": "3ad64dd3e66da56ae3f1fad79440ee5365309294",
         "author": "tongtongwang86",
         "date": "2023-10-09T14:27:56Z",

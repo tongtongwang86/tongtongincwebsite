@@ -36,6 +36,7 @@ app.get('/iphone15', (req, res) => {
     var orderdata = require('./Modules/ordertrack/orderstatusoutput.json');
 
     res.render('order/index', { orderdata })
+
     
 });
 
