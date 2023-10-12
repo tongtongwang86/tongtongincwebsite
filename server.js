@@ -44,6 +44,11 @@ app.get('/3d',(req, res) => {
     res.render('3D/index')
 }) 
 
+
+app.get('/clicker',(req, res) => {
+    res.render('Clicker/index')
+}) 
+
 app.get('/members/sally',(req, res) => {
     res.render('Members/Sally')
 }) 
