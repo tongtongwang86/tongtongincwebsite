@@ -37,6 +37,7 @@ chmod 700 CVSlogger.sh
 - [x] change log git commit sync
 - [x] conic curves
 - [x] Clicker
+- [x] Cloud
 - [ ] youtube vid download
 - [ ] suggestion tracker
 - [ ] ai??
