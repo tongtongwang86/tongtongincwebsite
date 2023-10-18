@@ -39,6 +39,8 @@ chmod 700 CVSlogger.sh
 - [x] Clicker
 - [x] Cloud
 - [ ] youtube vid download
+- [ ] add storage to mac
+- [ ] modular backend script running
 - [ ] suggestion tracker
 - [ ] ai??
 - [ ] ptable
@@ -46,3 +48,4 @@ chmod 700 CVSlogger.sh
 - [ ] weather
 - [ ] change log
 - [ ] members
+- [ ] members dashboard link to cloud
