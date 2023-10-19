@@ -44,6 +44,7 @@ chmod 700 CVSlogger.sh
 - [ ] suggestion tracker
 - [ ] ai??
 - [ ] ptable
+- [ ] citation generator
 - [ ] calculator
 - [ ] weather
 - [ ] change log
