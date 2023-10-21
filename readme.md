@@ -2,6 +2,7 @@ URL: tongtonginc.com
 
 docker run --name tongtongwebsite -it -p 8009:3000 -v $(pwd):/app  tongtongincwebsite  
 docker build -t tongtongincwebsite .
+./CVSlogger.sh
 
 ---Required files---
 
