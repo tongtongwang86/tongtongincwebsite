@@ -49,6 +49,7 @@ chmod 700 CVSlogger.sh
 - [ ] calculator
 - [ ] weather
 - [ ] new server
+	-[ ] static ip
 - [ ] change log
 - [ ] members
 - [ ] members dashboard link to cloud
