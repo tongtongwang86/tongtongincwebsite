@@ -39,6 +39,7 @@ chmod 700 CVSlogger.sh
 - [x] conic curves
 - [x] Clicker
 - [x] Cloud
+- [ ] render farm
 - [ ] youtube vid download
 - [ ] add storage to mac
 - [ ] modular backend script running
