@@ -48,6 +48,7 @@ chmod 700 CVSlogger.sh
 - [ ] ptable
 - [ ] citation generator
 - [ ] calculator
+- [ ] json not syncing with ejs webpage without restarting bug
 - [ ] weather
 - [ ] new server
 	-[ ] static ip

@@ -26,6 +26,11 @@ app.get('/track',(req, res) => {
     res.render('Map/password')
 }) 
 
+
+app.get('/Revolute',(req, res) => {
+    res.render('Revolute/index')
+}) 
+
 app.get('/calendar',(req, res) => {
     res.render('Calendar/calendar')
 }) 
