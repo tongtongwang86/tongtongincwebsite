@@ -15,10 +15,6 @@ app.set('view engine', 'ejs')
 
 app.get('/',(req, res) => {
 
-    // console.log('here')
-     //res.send('hi')
-    // res.sendStatus(404)
-    // res.status(404).send("page not found")
     res.render('Home/index')
 }) 
 
