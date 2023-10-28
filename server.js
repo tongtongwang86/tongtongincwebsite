@@ -93,7 +93,7 @@ function updatePerDay(){
             return;
         }
        console.log(`${stdout}`);
-        // console.log("gitlog");
+        
     });
 
 }
