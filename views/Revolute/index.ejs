@@ -31,7 +31,7 @@ font-size: 140%;
 
     .maintext uem{
   color: #bcbcaec8;
-  /* text-decoration: none; */
+
 }
 .maintext a{
   width: 150px;
@@ -64,15 +64,6 @@ border-radius: 15px;
     
 }
 
-/* video.loading {   background: black url(images/map.png) center center no-repeat; } */
-
-/* .video-bg:first-child {
-  display: none;
-}
-
-.video-bg img {
-  display: none;
-} */
 
 
 .background {
@@ -147,13 +138,14 @@ justify-items:top;
         #prevBtn {
           
           position: absolute;
-          top:50%;
+          bottom:.5%;
            transform: translate(-0%, -50%);
           z-index:10;
-          left: 1%;
+          left: 2%;
           /* background-color: #97b2cf; */
           padding: 20px;
           background-image: url("images/leftarrow.svg");
+          filter: drop-shadow();
 
           
            
@@ -163,8 +155,8 @@ justify-items:top;
       #nextBtn {
           
           position: absolute;
-          top:50%;
-          right:1%;
+          bottom:.5%;
+          right:2%;
            transform: translate(-0%, -50%);
           z-index:10;
           padding: 20px;
@@ -205,8 +197,8 @@ justify-items:top;
             <a href="/" >Tongtong.inc</a>
         </div>
 
-        <div class="textcontainer" style=" max-height: fit-content; min-height: 80dvh;  ">
-       
+        <div class="textcontainer" style=" max-height: fit-content; min-height: 70dvh; display: grid; align-items: center;">
+  
           
         <div style="display: flex; flex-direction: column; align-content: center; align-items: center;">
           <video id="hidden" muted defaultmuted playsinline autoplay loop style="margin: 0px; width: 1px; height: 1px; padding: 0px; ">
