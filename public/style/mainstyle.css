@@ -7,7 +7,6 @@ body{
   
    
     background: #161925;
-    /* min-height: 100dvh; */
     margin:0;
   
   }
@@ -15,8 +14,6 @@ body{
   .dropoff{
     /* position:relative; */
     width:100dvw;
-    /* background-image: linear-gradient(#161925
-,#1c1d2c 40%, #5f583700); */
     background-image: linear-gradient(#5f583700,#1c1d2c 60%, #161925);
     min-height: 6em;
     /* bottom: 0; */
@@ -28,6 +25,7 @@ body{
     background: #1c1d2c;
     min-height: 100dvh;
     width:100dvw;
+    max-width:100dvw;
     display: flex;
     flex-direction: column;
     place-items: center;

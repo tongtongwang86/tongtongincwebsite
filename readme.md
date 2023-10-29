@@ -14,7 +14,6 @@ lineColor = "#597B98"
 markerColor = "#97B2C8"
 
 
-
 Cvslogger.sh
 chmod 700 CVSlogger.sh
 

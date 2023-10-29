@@ -68,6 +68,7 @@ body {
   place-items: center;
   background: #1c1d2c;
   margin:0;
+  overflow-x: hidden; 
   
 }
 
@@ -232,7 +233,7 @@ flex-wrap: nowrap;
 right: 0px;
 bottom: 0px;
 
-width: 55dvw;
+height: 35%;
 filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.5));
 /* z-index: -1; */
 pointer-events: none;
@@ -254,11 +255,25 @@ pointer-events: none;
 /* ---- FOG AAAAA ----*/
 
 
+.fogcontainer{
+  position: absolute;
+  height: 100dvh;
+  width: 100dvw;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  outline: auto;
+  pointer-events: none;
+}
+
 .fogwrapper {
   height: 100%;
   position: absolute;
   top: 0;
+  
+  overflow: hidden;
   width: 100%;
+  outline: auto;
   -webkit-filter: blur(1px) grayscale(0.2) saturate(1.2) sepia(0.2);
   filter: blur(1px) grayscale(0.2) saturate(1.2) sepia(0.2);
   pointer-events: none;
@@ -510,7 +525,7 @@ pointer-events: none;
   
   <img src="images/halloween/pumpkin.svg" alt="pumpkin" class="pumpkin" />
   <img src="images/halloween/house.png" style="opacity: 50%;" alt="house" class="house" />
-
+<div class="fogcontainer">
   <div id="foglayer_01" class="fog">
     <div class="image01"></div>
     <div class="image02"></div>
@@ -523,5 +538,6 @@ pointer-events: none;
     <div class="image01"></div>
     <div class="image02"></div>
   </div>
+</div>
 </body>
 </html>
