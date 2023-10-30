@@ -140,12 +140,12 @@ justify-items:top;
           position: absolute;
           bottom:.5%;
            transform: translate(-0%, -50%);
-          z-index:10;
+          z-index:50;
           left: 2%;
           /* background-color: #97b2cf; */
           padding: 20px;
           background-image: url("images/leftarrow.svg");
-          filter: drop-shadow();
+          filter: drop-shadow(0px 0px 30px rgb(255, 255, 255));
 
           
            
@@ -158,22 +158,23 @@ justify-items:top;
           bottom:.5%;
           right:2%;
            transform: translate(-0%, -50%);
-          z-index:10;
+          z-index: 50;
           padding: 20px;
           background-image: url("images/rightarrow.svg");
+          filter: drop-shadow(0px 0px 30px rgb(255, 255, 255));
            
         }
 
         #controls {
           
        margin: 0;
-           
+       z-index: 50;
         }
 
         .caption{
     
     font-family: sans-serif;
-      font-size: 2em;
+      font-size: 2.5em;
     text-align: center;
     line-height: 1;
     color: #b7b7b7;
@@ -188,6 +189,72 @@ justify-items:top;
 
   }
 
+  .showcase {
+    flex: 1;
+    max-width: 100%; /* Adjust this to control the width of the image */
+    box-sizing: border-box;
+    flex-grow: 2;
+    background-image:url("images/Revolute/showcase1 Large.png");
+    background-size: cover;
+ 
+    aspect-ratio: 1280/906 auto;
+
+}
+
+
+
+
+.showcasecontainer {
+  width: 80dvw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+      
+}
+
+.magticontainer {
+  width: 80dvw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+      
+}
+
+.showcasetext {
+    flex: 1;
+    max-width: 100%; /* Adjust this to control the width of the text */
+    box-sizing: border-box;
+    font-family: sans-serif;
+    color: #989696;
+}
+
+ .showcasetext title1{
+
+  font-family: sans-serif;
+      font-size: 2.5em;
+    text-align: center;
+    line-height: 1;
+    color: #b7b7b7;
+    font-weight: 500;
+   
+ }
+
+
+/* magtics below */
+
+@media (max-width: 768px) {
+    .showcasecontainer {
+        flex-direction: column; /* Stack elements vertically on smaller screens */
+    }
+    .magticontainer {
+        flex-direction: column-reverse; /* Stack elements vertically on smaller screens */
+    }
+    .showcasetext, .showcase {
+        width: 100dvw; /* Full width on smaller screens */
+    }
+}
 
 </style>
 </head>
@@ -255,7 +322,7 @@ justify-items:top;
 
           </div>
 
-          <div class="image" style="  left: 200%; height: max-content;">
+          <div class="image" style="  left: 200%; height: max-content; ">
           
             <video class="video-bg" poster="images/Revolute/Demo/3.png" muted defaultmuted playsinline autoplay loop  style="width: 100%; ">
             
@@ -286,6 +353,32 @@ justify-items:top;
       
       </div>
     </div>
+
+
+
+
+
+    <div class="showcasecontainer" style="margin-top: 3em; ">
+      <div class="showcasetext">
+       <title1>Unmatched Durability and Precision.</title1> Magnetic encoder paired with Bearing allow for an non-contact sensing solution. There is no physical wear compared to metal brushes found within traditional mouse encoders makes it less prone to hardware failure.
+      </div>
+      <div class="showcase" >
+       
+      </div>
+  </div>
+
+  <div class="magticontainer" style="margin-top: 3em; ">
+    <div class="showcase" style=" background-image:url('images/Revolute/magtics Large.png');">
+     
+    </div>
+    <div class="showcasetext">
+     <title1>Magtic Virtual-Idents.</title1> <br> 36 Precision-Placed Magnets provides a increment snap feel, and allows for controlled Single Stepping.
+     
+     
+     
+    </div>
+   
+</div>
 
 
    
