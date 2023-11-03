@@ -41,6 +41,8 @@ chmod 700 CVSlogger.sh
 - [x] Cloud
 - [x] migrate to server
 - [ ] render farm
+- [ ] pci passthrough
+- [x] add ram to server
 - [ ] youtube vid download
 - [ ] add storage to mac
 - [ ] modular backend script running
