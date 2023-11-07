@@ -40,6 +40,7 @@ chmod 700 CVSlogger.sh
 - [x] Clicker
 - [x] Cloud
 - [x] migrate to server
+- [ ] documentation site
 - [ ] render farm
 - [ ] pci passthrough
 - [x] add ram to server
