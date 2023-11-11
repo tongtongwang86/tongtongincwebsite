@@ -40,9 +40,12 @@ chmod 700 CVSlogger.sh
 - [x] Clicker
 - [x] Cloud
 - [x] migrate to server
-- [ ] documentation site
+- [x] documentation site
+- [ ] pcie bifurcation 
+- [ ] get hyper m.2 nvme card working with 2*4tb
+
 - [ ] render farm
-- [ ] pci passthrough
+- [x] pci passthrough
 - [x] add ram to server
 - [ ] youtube vid download
 - [ ] add storage to mac
@@ -54,8 +57,8 @@ chmod 700 CVSlogger.sh
 - [ ] calculator
 - [ ] json not syncing with ejs webpage without restarting bug
 - [ ] weather
-- [ ] new server
-	-[ ] static ip
+- [x] new server
+	-[x] static ip
 - [ ] change log
 - [ ] members
 - [ ] members dashboard link to cloud
