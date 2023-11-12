@@ -41,9 +41,9 @@ chmod 700 CVSlogger.sh
 - [x] Cloud
 - [x] migrate to server
 - [x] documentation site
-- [ ] pcie bifurcation 
-- [ ] get hyper m.2 nvme card working with 2*4tb
-
+- [x] pcie bifurcation 
+- [x] get hyper m.2 nvme card working with 2*4tb
+- [ ] forward into vm setup own cloud
 - [ ] render farm
 - [x] pci passthrough
 - [x] add ram to server
