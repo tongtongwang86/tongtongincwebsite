@@ -48,7 +48,6 @@ chmod 700 CVSlogger.sh
 - [x] pci passthrough
 - [x] add ram to server
 - [ ] youtube vid download
-- [ ] add storage to mac
 - [ ] modular backend script running
 - [ ] suggestion tracker
 - [ ] ai??
