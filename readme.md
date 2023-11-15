@@ -43,7 +43,8 @@ chmod 700 CVSlogger.sh
 - [x] documentation site
 - [x] pcie bifurcation 
 - [x] get hyper m.2 nvme card working with 2*4tb
-- [ ] forward into vm setup own cloud
+- [x] forward into vm setup own cloud
+- [ ] implement dolphin2.2
 - [ ] render farm
 - [x] pci passthrough
 - [x] add ram to server
