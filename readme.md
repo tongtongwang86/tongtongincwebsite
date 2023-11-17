@@ -48,7 +48,7 @@ chmod 700 CVSlogger.sh
 - [ ] render farm
 - [x] pci passthrough
 - [x] add ram to server
-- [ ] youtube vid download
+- [ ] youtube vid download ytdlp
 - [ ] modular backend script running
 - [ ] suggestion tracker
 - [ ] ai??
