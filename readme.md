@@ -44,6 +44,7 @@ chmod 700 CVSlogger.sh
 - [x] pcie bifurcation 
 - [x] get hyper m.2 nvme card working with 2*4tb
 - [x] forward into vm setup own cloud
+- [ ] migrate mac onto sever and fix track page
 - [ ] implement dolphin2.2
 - [ ] render farm
 - [x] pci passthrough
