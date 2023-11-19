@@ -19,6 +19,23 @@ Cvslogger.sh
 chmod 700 CVSlogger.sh
 
 ---To do---
+- [ ] migrate mac onto server and fix track page
+- [ ] implement dolphin2.2
+- [ ] render farm
+- [ ] one step further page
+- [ ] youtube vid download ytdlp
+- [ ] modular backend script running
+- [ ] suggestion tracker
+- [ ] ai??
+- [ ] ptable
+- [ ] citation generator
+- [ ] calculator
+- [ ] json not syncing with ejs webpage without restarting bug
+- [ ] weather
+- [ ] change log
+- [ ] members
+- [ ] members dashboard link to cloud
+---done---
 - [x] Add last refresh time on website
 - [x] improve website aesthetics
 - [x] combine all 3 scripts into one
@@ -34,7 +51,6 @@ chmod 700 CVSlogger.sh
 - [x] calendar page
 - [x] about page
 - [x] company logo top left
-- [ ] one step further page
 - [x] change log git commit sync
 - [x] conic curves
 - [x] Clicker
@@ -44,22 +60,7 @@ chmod 700 CVSlogger.sh
 - [x] pcie bifurcation 
 - [x] get hyper m.2 nvme card working with 2*4tb
 - [x] forward into vm setup own cloud
-- [ ] migrate mac onto sever and fix track page
-- [ ] implement dolphin2.2
-- [ ] render farm
 - [x] pci passthrough
 - [x] add ram to server
-- [ ] youtube vid download ytdlp
-- [ ] modular backend script running
-- [ ] suggestion tracker
-- [ ] ai??
-- [ ] ptable
-- [ ] citation generator
-- [ ] calculator
-- [ ] json not syncing with ejs webpage without restarting bug
-- [ ] weather
 - [x] new server
 	-[x] static ip
-- [ ] change log
-- [ ] members
-- [ ] members dashboard link to cloud
