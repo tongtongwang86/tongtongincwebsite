@@ -19,6 +19,7 @@ Cvslogger.sh
 chmod 700 CVSlogger.sh
 
 ---To do---
+- [ ] sync revolute
 - [ ] migrate mac onto server and fix track page
 - [ ] implement dolphin2.2
 - [ ] render farm
