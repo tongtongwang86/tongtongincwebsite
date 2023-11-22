@@ -6,6 +6,12 @@ Mapgen/ItemsToTrack.py
 public/airpodsmap.html
 Mapgen/airpoditem.py
 Mapgen/__pycache__
+api/._.DS_Store
+api/VideoDownload/path.py
+api/VideoDownload/._path.py
+api/VideoDownload/._downloadvid.py
+api/VideoDownload/._path~.py
+
 password.js
 node_modules
 .DS_Store

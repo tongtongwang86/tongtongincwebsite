@@ -65,4 +65,11 @@ chmod 700 CVSlogger.sh
 - [x] pci passthrough
 - [x] add ram to server
 - [x] new server
+<<<<<<< HEAD
 	-[x] static ip
+=======
+- [x] static ip
+- [ ] change log
+- [ ] members
+- [ ] members dashboard link to cloud
+>>>>>>> 3b3c2ff (Added video download api server)

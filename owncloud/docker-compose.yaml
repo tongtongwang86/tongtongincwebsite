@@ -20,7 +20,7 @@ services:
       - redis
     environment:
       - OWNCLOUD_DOMAIN=${OWNCLOUD_DOMAIN}
-      - OWNCLOUD_TRUSTED_DOMAINS= "cloud.tongtonginc.com:8080,http://cloud.tongtonginc.com:8080, cloud.tongtonginc.com,http://cloud.tongtonginc.com:80, http://cloud.tongtonginc.com, 192.168.124.10:8080,localhost:8080, 172.29.125.17"
+      - OWNCLOUD_TRUSTED_DOMAINS= "cloud.tongtonginc.com:8080,http://cloud.tongtonginc.com:8080, cloud.tongtonginc.com,http://cloud.tongtonginc.com:80, http://cloud.tongtonginc.com, 192.168.124.23,localhost:8080, 172.29.125.17"
       - OWNCLOUD_DB_TYPE=mysql
       - OWNCLOUD_DB_NAME=owncloud
       - OWNCLOUD_DB_USERNAME=owncloud
