@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Request</title>
+</head>
+<body>
+    <div>
+        <label for="videoId">Enter Video ID:</label>
+        <input type="text" id="videoId" placeholder="Enter Video ID">
+        <button onclick="makeApiRequest()">Submit</button>
+        <div id="loading" style="display: none;">Loading...</div>
+    </div>
+
+    <script>
+        function makeApiRequest() {
+            // Get the user input
+            var videoId = document.getElementById("videoId").value;
+
+            // Create the JSON payload
+            var payload = {
+                "easydownload": {
+                    "VideoID": videoId
+                }
+            };
+
+            // Show loading indicator
+            var loadingDiv = document.getElementById("loading");
+            loadingDiv.style.display = "block";
+
+            // Disable the submit button during the request
+            var submitButton = document.querySelector("button");
+            submitButton.disabled = true;
+
+            // Perform the API request using Fetch API
+            fetch('https://api.tongtonginc.com/api/download-video', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(payload)
+            })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+
+                // Extract filename from Content-Disposition header if present
+                var contentDisposition = response.headers.get('Content-Disposition');
+                var filename = 'Video'; // Default filename if not found
+                if (contentDisposition) {
+                    var match = contentDisposition.match(/filename="(.+)"/);
+                    if (match) {
+                        filename = match[1];
+                    }
+                }
+
+                // Create a Blob from the response data
+                return response.blob()
+                    .then(blob => {
+                        // Create a download link
+                        var link = document.createElement('a');
+                        link.href = URL.createObjectURL(blob);
+
+                        // Set the filename using the download attribute
+                        link.download = filename;
+
+                        // Append the link to the body
+                        document.body.appendChild(link);
+
+                        // Trigger the click event to initiate the download
+                        link.click();
+
+                        // Clean up
+                        document.body.removeChild(link);
+                    });
+            })
+            .catch(error => {
+                // Handle errors here
+                console.error('Error:', error);
+            })
+            .finally(() => {
+                // Hide loading indicator and enable the submit button
+                loadingDiv.style.display = "none";
+                submitButton.disabled = false;
+            });
+        }
+    </script>
+</body>
+</html>

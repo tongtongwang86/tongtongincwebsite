@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            margin: 20px;
+        }
+
+        #response-container {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #fff;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+    <title>TrashGPT</title>
+</head>
+<body>
+
+    <h1>TrashGPT</h1>
+
+    <label for="user-input">say something to the trash can:</label>
+    <input type="text" id="user-input">
+    <button onclick="makeApiRequest()">goggoogg</button>
+
+    <div id="response-container"></div>
+
+    <script>
+        function makeApiRequest() {
+            // Get user input
+            var userInput = document.getElementById("user-input").value;
+            var payload = {
+                "simplegen": {
+                    "prompt": userInput
+                }
+            }
+                           
+            // Make a POST request to the API
+            fetch('https://aip.tongtonginc.com/api/text-gen', {
+                            method: 'POST',
+                            headers: {
+                                'Content-Type': 'application/json'
+                            },
+                            body: JSON.stringify(payload)
+            })
+            
+            
+            .then(response => response.text())
+            .then(data => {
+                // Display the API response
+                displayResponse(data);
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                displayResponse({ error: 'An error occurred while making the request.' });
+            });
+        }
+
+        function displayResponse(data) {
+            // Display the API response in the response-container div
+            var responseContainer = document.getElementById("response-container");
+            
+            responseContainer.innerHTML = data;
+        }
+    </script>
+
+</body>
+</html>

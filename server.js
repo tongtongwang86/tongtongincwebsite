@@ -21,6 +21,11 @@ app.get('/track',(req, res) => {
     res.render('Map/password')
 }) 
 
+app.get('/trashgpt',(req, res) => {
+    res.render('Toolchain/TrashGPT/index')
+})
+
+
 
 app.get('/Revolute',(req, res) => {
     res.render('Revolute/index')
@@ -48,6 +53,10 @@ app.get('/3d',(req, res) => {
 app.get('/clicker',(req, res) => {
     res.render('Clicker/index')
 }) 
+
+app.get('/videodownload',(req, res) => {
+    res.render('Toolchain/VideoDownload/index')
+})
 
 app.get('/members/sally',(req, res) => {
     res.render('Members/Sally')
