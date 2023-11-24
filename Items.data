@@ -1,0 +1,885 @@
+[
+  {
+    "partInfo" : {
+      "name" : "Left Bud",
+      "type" : "leftBud",
+      "symbol" : "l.circle.fill"
+    },
+    "isFirmwareUpdateMandatory" : false,
+    "productType" : {
+      "type" : "hawkeye",
+      "productInformation" : {
+        "defaultListIcon" : "https:\/\/statici.icloud.com\/fmipmobile\/deviceImages-9.0\/Accessory\/AirPods_8206-0\/online-sourcelist.png",
+        "defaultHeroIcon3x" : "https:\/\/statici.icloud.com\/fmipmobile\/deviceImages-9.0\/Accessory\/AirPods_8206-0\/online-infobox__3x.png",
+        "vendorIdentifier" : 76,
+        "defaultListIcon2x" : "https:\/\/statici.icloud.com\/fmipmobile\/deviceImages-9.0\/Accessory\/AirPods_8206-0\/online-sourcelist__2x.png",
+        "modelName" : "AirPods Pro",
+        "requiresAudioSafetyAlert" : true,
+        "requiresAdditionalConnectionTime" : true,
+        "defaultListIcon3x" : "https:\/\/statici.icloud.com\/fmipmobile\/deviceImages-9.0\/Accessory\/AirPods_8206-0\/online-sourcelist__3x.png",
+        "productIdentifier" : 8206,
+        "antennaPower" : 4,
+        "defaultHeroIcon" : "https:\/\/statici.icloud.com\/fmipmobile\/deviceImages-9.0\/Accessory\/AirPods_8206-0\/online-infobox.png",
+        "defaultHeroIcon2x" : "https:\/\/statici.icloud.com\/fmipmobile\/deviceImages-9.0\/Accessory\/AirPods_8206-0\/online-infobox__2x.png",
+        "appBundleIdentifier" : "",
+        "manufacturerName" : "Apple"
+      }
+    },
+    "safeLocations" : [
+      {
+        "type" : 1,
+        "approvalState" : 1,
+        "name" : "Home",
+        "identifier" : "450BE407-F3D0-4B08-AB72-E587E31B756C",
+        "location" : {
+          "positionType" : "safeLocation",
+          "verticalAccuracy" : 80,
+          "longitude" : 121.42918573318362,
+          "floorLevel" : -1,
+          "isInaccurate" : false,
+          "isOld" : true,
+          "horizontalAccuracy" : 80,
+          "latitude" : 31.200088494233015,
+          "timeStamp" : 1700822943530,
+          "altitude" : 0,
+          "locationFinished" : true
+        },
+        "address" : {
+          "subAdministrativeArea" : null,
+          "label" : "Koala Cafe (Huihai Garden Branch)",
+          "streetAddress" : null,
+          "countryCode" : "CN",
+          "stateCode" : null,
+          "administrativeArea" : null,
+          "streetName" : "280, Huaihai West Road No.",
+          "formattedAddressLines" : [
+            "280, Huaihai West Road No., Changning",
+            "Shanghai China"
+          ],
+          "mapItemFullAddress" : "280, Huaihai West Road No., Changning, Shanghai",
+          "fullThroroughfare" : "280, Huaihai West Road No.",
+          "areaOfInterest" : [
+            "Huihai Garden"
+          ],
+          "locality" : "Shanghai",
+          "country" : "China"
+        }
+      }
+    ],
+    "owner" : "owner@localhost",
+    "batteryStatus" : 1,
+    "serialNumber" : "GX9DKM210C6K",
+    "lostModeMetadata" : null,
+    "capabilities" : 782,
+    "identifier" : "764B188B-159D-4C8C-A776-6B789F8D6952",
+    "address" : {
+      "subAdministrativeArea" : null,
+      "label" : "Miaohong Xinyuan",
+      "streetAddress" : null,
+      "countryCode" : "CN",
+      "stateCode" : null,
+      "administrativeArea" : null,
+      "streetName" : "Chuanshaxinzhen Yunyanhe Road 1255 Long",
+      "formattedAddressLines" : [
+        "Chuanshaxinzhen Yunyanhe Road 1255 Long, Pudong",
+        "Shanghai China"
+      ],
+      "mapItemFullAddress" : "Chuanshaxinzhen Yunyanhe Road 1255 Long, Pudong, Shanghai",
+      "fullThroroughfare" : "Chuanshaxinzhen Yunyanhe Road 1255 Long",
+      "areaOfInterest" : [
+        "Miaohong Xinyuan"
+      ],
+      "locality" : "Shanghai",
+      "country" : "China"
+    },
+    "location" : {
+      "positionType" : "crowdsourced",
+      "verticalAccuracy" : -1,
+      "longitude" : 121.71803029469119,
+      "floorLevel" : -1,
+      "isInaccurate" : false,
+      "isOld" : false,
+      "horizontalAccuracy" : 23.865649572226499,
+      "latitude" : 31.182367368222287,
+      "timeStamp" : 1700827803000,
+      "altitude" : -1,
+      "locationFinished" : true
+    },
+    "productIdentifier" : "ED64CAF0-2EE7-42F8-8274-0FC6D96D7400",
+    "isAppleAudioAccessory" : true,
+    "crowdSourcedLocation" : {
+      "positionType" : "crowdsourced",
+      "verticalAccuracy" : -1,
+      "longitude" : 121.71803029469119,
+      "floorLevel" : -1,
+      "isInaccurate" : false,
+      "isOld" : false,
+      "horizontalAccuracy" : 23.865649572226499,
+      "latitude" : 31.182367368222287,
+      "timeStamp" : 1700827803000,
+      "altitude" : -1,
+      "locationFinished" : true
+    },
+    "groupIdentifier" : "053C0114-0E06-4181-B312-776EE7B19980",
+    "role" : {
+      "name" : "Custom Name",
+      "emoji" : "😀",
+      "identifier" : 999
+    },
+    "systemVersion" : "66.10.80",
+    "name" : "Left Bud"
+  },
+  {
+    "partInfo" : {
+      "name" : "Right Bud",
+      "type" : "rightBud",
+      "symbol" : "r.circle.fill"
+    },
+    "isFirmwareUpdateMandatory" : false,
+    "productType" : {
+      "type" : "hawkeye",
+      "productInformation" : {
+        "defaultListIcon" : "https:\/\/statici.icloud.com\/fmipmobile\/deviceImages-9.0\/Accessory\/AirPods_8206-0\/online-sourcelist.png",
+        "defaultHeroIcon3x" : "https:\/\/statici.icloud.com\/fmipmobile\/deviceImages-9.0\/Accessory\/AirPods_8206-0\/online-infobox__3x.png",
+        "vendorIdentifier" : 76,
+        "defaultListIcon2x" : "https:\/\/statici.icloud.com\/fmipmobile\/deviceImages-9.0\/Accessory\/AirPods_8206-0\/online-sourcelist__2x.png",
+        "modelName" : "AirPods Pro",
+        "requiresAudioSafetyAlert" : true,
+        "requiresAdditionalConnectionTime" : true,
+        "defaultListIcon3x" : "https:\/\/statici.icloud.com\/fmipmobile\/deviceImages-9.0\/Accessory\/AirPods_8206-0\/online-sourcelist__3x.png",
+        "productIdentifier" : 8206,
+        "antennaPower" : 4,
+        "defaultHeroIcon" : "https:\/\/statici.icloud.com\/fmipmobile\/deviceImages-9.0\/Accessory\/AirPods_8206-0\/online-infobox.png",
+        "defaultHeroIcon2x" : "https:\/\/statici.icloud.com\/fmipmobile\/deviceImages-9.0\/Accessory\/AirPods_8206-0\/online-infobox__2x.png",
+        "appBundleIdentifier" : "",
+        "manufacturerName" : "Apple"
+      }
+    },
+    "safeLocations" : [
+      {
+        "type" : 1,
+        "approvalState" : 1,
+        "name" : "Home",
+        "identifier" : "450BE407-F3D0-4B08-AB72-E587E31B756C",
+        "location" : {
+          "positionType" : "safeLocation",
+          "verticalAccuracy" : 80,
+          "longitude" : 121.42918573318362,
+          "floorLevel" : -1,
+          "isInaccurate" : false,
+          "isOld" : true,
+          "horizontalAccuracy" : 80,
+          "latitude" : 31.200088494233015,
+          "timeStamp" : 1700822943530,
+          "altitude" : 0,
+          "locationFinished" : true
+        },
+        "address" : {
+          "subAdministrativeArea" : null,
+          "label" : "Koala Cafe (Huihai Garden Branch)",
+          "streetAddress" : null,
+          "countryCode" : "CN",
+          "stateCode" : null,
+          "administrativeArea" : null,
+          "streetName" : "280, Huaihai West Road No.",
+          "formattedAddressLines" : [
+            "280, Huaihai West Road No., Changning",
+            "Shanghai China"
+          ],
+          "mapItemFullAddress" : "280, Huaihai West Road No., Changning, Shanghai",
+          "fullThroroughfare" : "280, Huaihai West Road No.",
+          "areaOfInterest" : [
+            "Huihai Garden"
+          ],
+          "locality" : "Shanghai",
+          "country" : "China"
+        }
+      }
+    ],
+    "owner" : "owner@localhost",
+    "batteryStatus" : 1,
+    "serialNumber" : "GN3DKPCN0C6J",
+    "lostModeMetadata" : null,
+    "capabilities" : 782,
+    "identifier" : "1AF574EA-DBC6-4DC5-96BA-319B4B57385F",
+    "address" : {
+      "subAdministrativeArea" : null,
+      "label" : "Miaohong Xinyuan",
+      "streetAddress" : null,
+      "countryCode" : "CN",
+      "stateCode" : null,
+      "administrativeArea" : null,
+      "streetName" : "Chuanshaxinzhen Yunyanhe Road 1255 Long",
+      "formattedAddressLines" : [
+        "Chuanshaxinzhen Yunyanhe Road 1255 Long, Pudong",
+        "Shanghai China"
+      ],
+      "mapItemFullAddress" : "Chuanshaxinzhen Yunyanhe Road 1255 Long, Pudong, Shanghai",
+      "fullThroroughfare" : "Chuanshaxinzhen Yunyanhe Road 1255 Long",
+      "areaOfInterest" : [
+        "Miaohong Xinyuan"
+      ],
+      "locality" : "Shanghai",
+      "country" : "China"
+    },
+    "location" : {
+      "positionType" : "crowdsourced",
+      "verticalAccuracy" : -1,
+      "longitude" : 121.71803029469119,
+      "floorLevel" : -1,
+      "isInaccurate" : false,
+      "isOld" : false,
+      "horizontalAccuracy" : 23.865649572226499,
+      "latitude" : 31.182367368222287,
+      "timeStamp" : 1700827803000,
+      "altitude" : -1,
+      "locationFinished" : true
+    },
+    "productIdentifier" : "ED64CAF0-2EE7-42F8-8274-0FC6D96D7400",
+    "isAppleAudioAccessory" : true,
+    "crowdSourcedLocation" : {
+      "positionType" : "crowdsourced",
+      "verticalAccuracy" : -1,
+      "longitude" : 121.71803029469119,
+      "floorLevel" : -1,
+      "isInaccurate" : false,
+      "isOld" : false,
+      "horizontalAccuracy" : 23.865649572226499,
+      "latitude" : 31.182367368222287,
+      "timeStamp" : 1700827803000,
+      "altitude" : -1,
+      "locationFinished" : true
+    },
+    "groupIdentifier" : "053C0114-0E06-4181-B312-776EE7B19980",
+    "role" : {
+      "name" : "Custom Name",
+      "emoji" : "😀",
+      "identifier" : 999
+    },
+    "systemVersion" : "66.10.80",
+    "name" : "Right Bud"
+  },
+  {
+    "partInfo" : null,
+    "isFirmwareUpdateMandatory" : false,
+    "productType" : {
+      "type" : "b389",
+      "productInformation" : {
+        "manufacturerName" : "Apple",
+        "modelName" : "",
+        "productIdentifier" : 21760,
+        "vendorIdentifier" : 76,
+        "antennaPower" : 4
+      }
+    },
+    "safeLocations" : [
+      {
+        "type" : 1,
+        "approvalState" : 1,
+        "name" : "Home",
+        "identifier" : "450BE407-F3D0-4B08-AB72-E587E31B756C",
+        "location" : {
+          "positionType" : "safeLocation",
+          "verticalAccuracy" : 80,
+          "longitude" : 121.42918573318362,
+          "floorLevel" : -1,
+          "isInaccurate" : false,
+          "isOld" : true,
+          "horizontalAccuracy" : 80,
+          "latitude" : 31.200088494233015,
+          "timeStamp" : 1700822943530,
+          "altitude" : 0,
+          "locationFinished" : true
+        },
+        "address" : {
+          "subAdministrativeArea" : null,
+          "label" : "Koala Cafe (Huihai Garden Branch)",
+          "streetAddress" : null,
+          "countryCode" : "CN",
+          "stateCode" : null,
+          "administrativeArea" : null,
+          "streetName" : "280, Huaihai West Road No.",
+          "formattedAddressLines" : [
+            "280, Huaihai West Road No., Changning",
+            "Shanghai China"
+          ],
+          "mapItemFullAddress" : "280, Huaihai West Road No., Changning, Shanghai",
+          "fullThroroughfare" : "280, Huaihai West Road No.",
+          "areaOfInterest" : [
+            "Huihai Garden"
+          ],
+          "locality" : "Shanghai",
+          "country" : "China"
+        }
+      }
+    ],
+    "owner" : "owner@localhost",
+    "batteryStatus" : 1,
+    "serialNumber" : "HGKFNC94P0GV",
+    "lostModeMetadata" : null,
+    "capabilities" : 734,
+    "identifier" : "357588EB-6645-4DBF-942A-E628E833D381",
+    "address" : {
+      "subAdministrativeArea" : null,
+      "label" : "No.280 Huaihai West Road",
+      "streetAddress" : "No.280",
+      "countryCode" : "CN",
+      "stateCode" : null,
+      "administrativeArea" : null,
+      "streetName" : "Huaihai West Road",
+      "formattedAddressLines" : [
+        "No.280 Huaihai West Road",
+        "Shanghai China"
+      ],
+      "mapItemFullAddress" : "No.280 Huaihai West Road, Shanghai",
+      "fullThroroughfare" : "No.280 Huaihai West Road",
+      "areaOfInterest" : [
+        "Huihai Garden"
+      ],
+      "locality" : "Shanghai",
+      "country" : "China"
+    },
+    "location" : {
+      "positionType" : "ownedDeviceLocation",
+      "verticalAccuracy" : -1,
+      "longitude" : 121.42921636507496,
+      "floorLevel" : -1,
+      "isInaccurate" : false,
+      "isOld" : true,
+      "horizontalAccuracy" : 36.471342009621573,
+      "latitude" : 31.200049025658213,
+      "timeStamp" : 1700820614000,
+      "altitude" : -1,
+      "locationFinished" : true
+    },
+    "productIdentifier" : "DE3DE9FC-A990-4391-B22B-3B1DF35934FA",
+    "isAppleAudioAccessory" : false,
+    "crowdSourcedLocation" : {
+      "positionType" : "ownedDeviceLocation",
+      "verticalAccuracy" : -1,
+      "longitude" : 121.42921636507496,
+      "floorLevel" : -1,
+      "isInaccurate" : false,
+      "isOld" : true,
+      "horizontalAccuracy" : 36.471342009621573,
+      "latitude" : 31.200049025658213,
+      "timeStamp" : 1700820614000,
+      "altitude" : -1,
+      "locationFinished" : true
+    },
+    "groupIdentifier" : null,
+    "role" : {
+      "name" : "Custom Name",
+      "emoji" : "⚪️",
+      "identifier" : 999
+    },
+    "systemVersion" : "2.0.36",
+    "name" : ". _ ."
+  },
+  {
+    "partInfo" : {
+      "name" : "Right Bud",
+      "type" : "rightBud",
+      "symbol" : "r.circle.fill"
+    },
+    "isFirmwareUpdateMandatory" : false,
+    "productType" : {
+      "type" : "hawkeye",
+      "productInformation" : {
+        "defaultListIcon" : "https:\/\/statici.icloud.com\/fmipmobile\/deviceImages-9.0\/Accessory\/AirPods_8212-0\/online-sourcelist.png",
+        "defaultHeroIcon3x" : "https:\/\/statici.icloud.com\/fmipmobile\/deviceImages-9.0\/Accessory\/AirPods_8212-0\/online-infobox__3x.png",
+        "vendorIdentifier" : 76,
+        "defaultListIcon2x" : "https:\/\/statici.icloud.com\/fmipmobile\/deviceImages-9.0\/Accessory\/AirPods_8212-0\/online-sourcelist__2x.png",
+        "modelName" : "AirPods Pro (2nd generation)",
+        "requiresAudioSafetyAlert" : true,
+        "requiresAdditionalConnectionTime" : false,
+        "defaultListIcon3x" : "https:\/\/statici.icloud.com\/fmipmobile\/deviceImages-9.0\/Accessory\/AirPods_8212-0\/online-sourcelist__3x.png",
+        "productIdentifier" : 8212,
+        "antennaPower" : 4,
+        "defaultHeroIcon" : "https:\/\/statici.icloud.com\/fmipmobile\/deviceImages-9.0\/Accessory\/AirPods_8212-0\/online-infobox.png",
+        "defaultHeroIcon2x" : "https:\/\/statici.icloud.com\/fmipmobile\/deviceImages-9.0\/Accessory\/AirPods_8212-0\/online-infobox__2x.png",
+        "appBundleIdentifier" : "",
+        "manufacturerName" : "Apple"
+      }
+    },
+    "safeLocations" : [
+      {
+        "type" : 1,
+        "approvalState" : 1,
+        "name" : "Home",
+        "identifier" : "450BE407-F3D0-4B08-AB72-E587E31B756C",
+        "location" : {
+          "positionType" : "safeLocation",
+          "verticalAccuracy" : 80,
+          "longitude" : 121.42918573318362,
+          "floorLevel" : -1,
+          "isInaccurate" : false,
+          "isOld" : true,
+          "horizontalAccuracy" : 80,
+          "latitude" : 31.200088494233015,
+          "timeStamp" : 1700822943530,
+          "altitude" : 0,
+          "locationFinished" : true
+        },
+        "address" : {
+          "subAdministrativeArea" : null,
+          "label" : "Koala Cafe (Huihai Garden Branch)",
+          "streetAddress" : null,
+          "countryCode" : "CN",
+          "stateCode" : null,
+          "administrativeArea" : null,
+          "streetName" : "280, Huaihai West Road No.",
+          "formattedAddressLines" : [
+            "280, Huaihai West Road No., Changning",
+            "Shanghai China"
+          ],
+          "mapItemFullAddress" : "280, Huaihai West Road No., Changning, Shanghai",
+          "fullThroroughfare" : "280, Huaihai West Road No.",
+          "areaOfInterest" : [
+            "Huihai Garden"
+          ],
+          "locality" : "Shanghai",
+          "country" : "China"
+        }
+      }
+    ],
+    "owner" : "owner@localhost",
+    "batteryStatus" : 2,
+    "serialNumber" : "GT4JC4CY18JP",
+    "lostModeMetadata" : null,
+    "capabilities" : 782,
+    "identifier" : "DD008EC3-97CD-442F-9E6D-E48F15386D7B",
+    "address" : {
+      "subAdministrativeArea" : null,
+      "label" : "Panyu Road",
+      "streetAddress" : null,
+      "countryCode" : "CN",
+      "stateCode" : null,
+      "administrativeArea" : null,
+      "streetName" : "Panyu Road",
+      "formattedAddressLines" : [
+        "Panyu Road, Xuhui",
+        "Shanghai China"
+      ],
+      "mapItemFullAddress" : "Panyu Road, Xuhui, Shanghai",
+      "fullThroroughfare" : "Panyu Road",
+      "areaOfInterest" : [
+        "Panyu Unit"
+      ],
+      "locality" : "Shanghai",
+      "country" : "China"
+    },
+    "location" : {
+      "positionType" : "lastConnected",
+      "verticalAccuracy" : -1,
+      "longitude" : 121.4294314532726,
+      "floorLevel" : -1,
+      "isInaccurate" : false,
+      "isOld" : false,
+      "horizontalAccuracy" : 35,
+      "latitude" : 31.199749474152924,
+      "timeStamp" : 1700828375287,
+      "altitude" : -1,
+      "locationFinished" : true
+    },
+    "productIdentifier" : "728E6B6B-E36A-439D-919E-1E7396B905F1",
+    "isAppleAudioAccessory" : true,
+    "crowdSourcedLocation" : {
+      "positionType" : "lastConnected",
+      "verticalAccuracy" : -1,
+      "longitude" : 121.4294314532726,
+      "floorLevel" : -1,
+      "isInaccurate" : false,
+      "isOld" : false,
+      "horizontalAccuracy" : 35,
+      "latitude" : 31.199749474152924,
+      "timeStamp" : 1700828375287,
+      "altitude" : -1,
+      "locationFinished" : true
+    },
+    "groupIdentifier" : "6BBE2650-16F2-4CF8-9390-CBD11718AE43",
+    "role" : {
+      "name" : "Custom Name",
+      "emoji" : "😀",
+      "identifier" : 999
+    },
+    "systemVersion" : "97.2.0",
+    "name" : "Right Bud"
+  },
+  {
+    "partInfo" : null,
+    "isFirmwareUpdateMandatory" : false,
+    "productType" : {
+      "type" : "b389",
+      "productInformation" : {
+        "manufacturerName" : "Apple",
+        "modelName" : "",
+        "productIdentifier" : 21760,
+        "vendorIdentifier" : 76,
+        "antennaPower" : 4
+      }
+    },
+    "safeLocations" : [
+      {
+        "type" : 1,
+        "approvalState" : 1,
+        "name" : "Home",
+        "identifier" : "450BE407-F3D0-4B08-AB72-E587E31B756C",
+        "location" : {
+          "positionType" : "safeLocation",
+          "verticalAccuracy" : 80,
+          "longitude" : 121.42918573318362,
+          "floorLevel" : -1,
+          "isInaccurate" : false,
+          "isOld" : true,
+          "horizontalAccuracy" : 80,
+          "latitude" : 31.200088494233015,
+          "timeStamp" : 1700822943530,
+          "altitude" : 0,
+          "locationFinished" : true
+        },
+        "address" : {
+          "subAdministrativeArea" : null,
+          "label" : "Koala Cafe (Huihai Garden Branch)",
+          "streetAddress" : null,
+          "countryCode" : "CN",
+          "stateCode" : null,
+          "administrativeArea" : null,
+          "streetName" : "280, Huaihai West Road No.",
+          "formattedAddressLines" : [
+            "280, Huaihai West Road No., Changning",
+            "Shanghai China"
+          ],
+          "mapItemFullAddress" : "280, Huaihai West Road No., Changning, Shanghai",
+          "fullThroroughfare" : "280, Huaihai West Road No.",
+          "areaOfInterest" : [
+            "Huihai Garden"
+          ],
+          "locality" : "Shanghai",
+          "country" : "China"
+        }
+      }
+    ],
+    "owner" : "owner@localhost",
+    "batteryStatus" : 1,
+    "serialNumber" : "HGNL2Q5KP0GV",
+    "lostModeMetadata" : null,
+    "capabilities" : 734,
+    "identifier" : "F9C50004-1694-4D17-8809-FE723A9868D7",
+    "address" : {
+      "subAdministrativeArea" : null,
+      "label" : "Mingshen Garden Natatorium",
+      "streetAddress" : null,
+      "countryCode" : "CN",
+      "stateCode" : null,
+      "administrativeArea" : null,
+      "streetName" : "Wuzhong Road 633 Longmingshen Garden Unit No.78",
+      "formattedAddressLines" : [
+        "Wuzhong Road 633 Longmingshen Garden Unit No.78, Minhang",
+        "Shanghai China"
+      ],
+      "mapItemFullAddress" : "Wuzhong Road 633 Longmingshen Garden Unit No.78, Minhang, Shanghai",
+      "fullThroroughfare" : "Wuzhong Road 633 Longmingshen Garden Unit No.78",
+      "areaOfInterest" : [
+        "Mingshen Garden"
+      ],
+      "locality" : "Shanghai",
+      "country" : "China"
+    },
+    "location" : {
+      "positionType" : "crowdsourced",
+      "verticalAccuracy" : -1,
+      "longitude" : 121.3999791649214,
+      "floorLevel" : -1,
+      "isInaccurate" : false,
+      "isOld" : false,
+      "horizontalAccuracy" : 30.926463874359893,
+      "latitude" : 31.180251292939165,
+      "timeStamp" : 1700826850000,
+      "altitude" : -1,
+      "locationFinished" : true
+    },
+    "productIdentifier" : "DE3DE9FC-A990-4391-B22B-3B1DF35934FA",
+    "isAppleAudioAccessory" : false,
+    "crowdSourcedLocation" : {
+      "positionType" : "crowdsourced",
+      "verticalAccuracy" : -1,
+      "longitude" : 121.3999791649214,
+      "floorLevel" : -1,
+      "isInaccurate" : false,
+      "isOld" : false,
+      "horizontalAccuracy" : 30.926463874359893,
+      "latitude" : 31.180251292939165,
+      "timeStamp" : 1700826850000,
+      "altitude" : -1,
+      "locationFinished" : true
+    },
+    "groupIdentifier" : null,
+    "role" : {
+      "name" : "Custom Name",
+      "emoji" : "🐓",
+      "identifier" : 999
+    },
+    "systemVersion" : "2.0.36",
+    "name" : "Pro max"
+  },
+  {
+    "partInfo" : {
+      "name" : "Left Bud",
+      "type" : "leftBud",
+      "symbol" : "l.circle.fill"
+    },
+    "isFirmwareUpdateMandatory" : false,
+    "productType" : {
+      "type" : "hawkeye",
+      "productInformation" : {
+        "defaultListIcon" : "https:\/\/statici.icloud.com\/fmipmobile\/deviceImages-9.0\/Accessory\/AirPods_8212-0\/online-sourcelist.png",
+        "defaultHeroIcon3x" : "https:\/\/statici.icloud.com\/fmipmobile\/deviceImages-9.0\/Accessory\/AirPods_8212-0\/online-infobox__3x.png",
+        "vendorIdentifier" : 76,
+        "defaultListIcon2x" : "https:\/\/statici.icloud.com\/fmipmobile\/deviceImages-9.0\/Accessory\/AirPods_8212-0\/online-sourcelist__2x.png",
+        "modelName" : "AirPods Pro (2nd generation)",
+        "requiresAudioSafetyAlert" : true,
+        "requiresAdditionalConnectionTime" : false,
+        "defaultListIcon3x" : "https:\/\/statici.icloud.com\/fmipmobile\/deviceImages-9.0\/Accessory\/AirPods_8212-0\/online-sourcelist__3x.png",
+        "productIdentifier" : 8212,
+        "antennaPower" : 4,
+        "defaultHeroIcon" : "https:\/\/statici.icloud.com\/fmipmobile\/deviceImages-9.0\/Accessory\/AirPods_8212-0\/online-infobox.png",
+        "defaultHeroIcon2x" : "https:\/\/statici.icloud.com\/fmipmobile\/deviceImages-9.0\/Accessory\/AirPods_8212-0\/online-infobox__2x.png",
+        "appBundleIdentifier" : "",
+        "manufacturerName" : "Apple"
+      }
+    },
+    "safeLocations" : [
+      {
+        "type" : 1,
+        "approvalState" : 1,
+        "name" : "Home",
+        "identifier" : "450BE407-F3D0-4B08-AB72-E587E31B756C",
+        "location" : {
+          "positionType" : "safeLocation",
+          "verticalAccuracy" : 80,
+          "longitude" : 121.42918573318362,
+          "floorLevel" : -1,
+          "isInaccurate" : false,
+          "isOld" : true,
+          "horizontalAccuracy" : 80,
+          "latitude" : 31.200088494233015,
+          "timeStamp" : 1700822943530,
+          "altitude" : 0,
+          "locationFinished" : true
+        },
+        "address" : {
+          "subAdministrativeArea" : null,
+          "label" : "Koala Cafe (Huihai Garden Branch)",
+          "streetAddress" : null,
+          "countryCode" : "CN",
+          "stateCode" : null,
+          "administrativeArea" : null,
+          "streetName" : "280, Huaihai West Road No.",
+          "formattedAddressLines" : [
+            "280, Huaihai West Road No., Changning",
+            "Shanghai China"
+          ],
+          "mapItemFullAddress" : "280, Huaihai West Road No., Changning, Shanghai",
+          "fullThroroughfare" : "280, Huaihai West Road No.",
+          "areaOfInterest" : [
+            "Huihai Garden"
+          ],
+          "locality" : "Shanghai",
+          "country" : "China"
+        }
+      }
+    ],
+    "owner" : "owner@localhost",
+    "batteryStatus" : 2,
+    "serialNumber" : "GX8JC56B18JQ",
+    "lostModeMetadata" : null,
+    "capabilities" : 782,
+    "identifier" : "1434B4FC-6914-42DC-B6F5-CC9C94B50948",
+    "address" : {
+      "subAdministrativeArea" : null,
+      "label" : "Panyu Road",
+      "streetAddress" : null,
+      "countryCode" : "CN",
+      "stateCode" : null,
+      "administrativeArea" : null,
+      "streetName" : "Panyu Road",
+      "formattedAddressLines" : [
+        "Panyu Road, Xuhui",
+        "Shanghai China"
+      ],
+      "mapItemFullAddress" : "Panyu Road, Xuhui, Shanghai",
+      "fullThroroughfare" : "Panyu Road",
+      "areaOfInterest" : [
+        "Panyu Unit"
+      ],
+      "locality" : "Shanghai",
+      "country" : "China"
+    },
+    "location" : {
+      "positionType" : "lastConnected",
+      "verticalAccuracy" : -1,
+      "longitude" : 121.4294314532726,
+      "floorLevel" : -1,
+      "isInaccurate" : false,
+      "isOld" : false,
+      "horizontalAccuracy" : 35,
+      "latitude" : 31.199749474152924,
+      "timeStamp" : 1700828375287,
+      "altitude" : -1,
+      "locationFinished" : true
+    },
+    "productIdentifier" : "728E6B6B-E36A-439D-919E-1E7396B905F1",
+    "isAppleAudioAccessory" : true,
+    "crowdSourcedLocation" : {
+      "positionType" : "lastConnected",
+      "verticalAccuracy" : -1,
+      "longitude" : 121.4294314532726,
+      "floorLevel" : -1,
+      "isInaccurate" : false,
+      "isOld" : false,
+      "horizontalAccuracy" : 35,
+      "latitude" : 31.199749474152924,
+      "timeStamp" : 1700828375287,
+      "altitude" : -1,
+      "locationFinished" : true
+    },
+    "groupIdentifier" : "6BBE2650-16F2-4CF8-9390-CBD11718AE43",
+    "role" : {
+      "name" : "Custom Name",
+      "emoji" : "😀",
+      "identifier" : 999
+    },
+    "systemVersion" : "97.2.0",
+    "name" : "Left Bud"
+  },
+  {
+    "partInfo" : {
+      "name" : "Case",
+      "type" : "case"
+    },
+    "isFirmwareUpdateMandatory" : false,
+    "productType" : {
+      "type" : "hawkeye",
+      "productInformation" : {
+        "defaultListIcon" : "https:\/\/statici.icloud.com\/fmipmobile\/deviceImages-9.0\/Accessory\/AirPods_8213-0\/online-sourcelist.png",
+        "defaultHeroIcon3x" : "https:\/\/statici.icloud.com\/fmipmobile\/deviceImages-9.0\/Accessory\/AirPods_8213-0\/online-infobox__3x.png",
+        "vendorIdentifier" : 76,
+        "defaultListIcon2x" : "https:\/\/statici.icloud.com\/fmipmobile\/deviceImages-9.0\/Accessory\/AirPods_8213-0\/online-sourcelist__2x.png",
+        "modelName" : "AirPods Pro (2nd generation)",
+        "requiresAudioSafetyAlert" : false,
+        "requiresAdditionalConnectionTime" : false,
+        "defaultListIcon3x" : "https:\/\/statici.icloud.com\/fmipmobile\/deviceImages-9.0\/Accessory\/AirPods_8213-0\/online-sourcelist__3x.png",
+        "productIdentifier" : 8213,
+        "antennaPower" : 4,
+        "defaultHeroIcon" : "https:\/\/statici.icloud.com\/fmipmobile\/deviceImages-9.0\/Accessory\/AirPods_8213-0\/online-infobox.png",
+        "defaultHeroIcon2x" : "https:\/\/statici.icloud.com\/fmipmobile\/deviceImages-9.0\/Accessory\/AirPods_8213-0\/online-infobox__2x.png",
+        "appBundleIdentifier" : "",
+        "manufacturerName" : "Apple"
+      }
+    },
+    "safeLocations" : [
+      {
+        "type" : 1,
+        "approvalState" : 1,
+        "name" : "Home",
+        "identifier" : "450BE407-F3D0-4B08-AB72-E587E31B756C",
+        "location" : {
+          "positionType" : "safeLocation",
+          "verticalAccuracy" : 80,
+          "longitude" : 121.42918573318362,
+          "floorLevel" : -1,
+          "isInaccurate" : false,
+          "isOld" : true,
+          "horizontalAccuracy" : 80,
+          "latitude" : 31.200088494233015,
+          "timeStamp" : 1700822943530,
+          "altitude" : 0,
+          "locationFinished" : true
+        },
+        "address" : {
+          "subAdministrativeArea" : null,
+          "label" : "Koala Cafe (Huihai Garden Branch)",
+          "streetAddress" : null,
+          "countryCode" : "CN",
+          "stateCode" : null,
+          "administrativeArea" : null,
+          "streetName" : "280, Huaihai West Road No.",
+          "formattedAddressLines" : [
+            "280, Huaihai West Road No., Changning",
+            "Shanghai China"
+          ],
+          "mapItemFullAddress" : "280, Huaihai West Road No., Changning, Shanghai",
+          "fullThroroughfare" : "280, Huaihai West Road No.",
+          "areaOfInterest" : [
+            "Huihai Garden"
+          ],
+          "locality" : "Shanghai",
+          "country" : "China"
+        }
+      }
+    ],
+    "owner" : "owner@localhost",
+    "batteryStatus" : 2,
+    "serialNumber" : "MGF2J1GFQT",
+    "lostModeMetadata" : null,
+    "capabilities" : 846,
+    "identifier" : "62569B3B-3411-482C-A6EA-0661180C5560",
+    "address" : {
+      "subAdministrativeArea" : null,
+      "label" : "Panyu Road",
+      "streetAddress" : null,
+      "countryCode" : "CN",
+      "stateCode" : null,
+      "administrativeArea" : null,
+      "streetName" : "Panyu Road",
+      "formattedAddressLines" : [
+        "Panyu Road, Xuhui",
+        "Shanghai China"
+      ],
+      "mapItemFullAddress" : "Panyu Road, Xuhui, Shanghai",
+      "fullThroroughfare" : "Panyu Road",
+      "areaOfInterest" : [
+        "Panyu Unit"
+      ],
+      "locality" : "Shanghai",
+      "country" : "China"
+    },
+    "location" : {
+      "positionType" : "lastConnected",
+      "verticalAccuracy" : -1,
+      "longitude" : 121.4294314532726,
+      "floorLevel" : -1,
+      "isInaccurate" : false,
+      "isOld" : false,
+      "horizontalAccuracy" : 35,
+      "latitude" : 31.199749474152924,
+      "timeStamp" : 1700828375287,
+      "altitude" : -1,
+      "locationFinished" : true
+    },
+    "productIdentifier" : "DED0420D-11A9-4A98-9741-EE4C44ED1ADB",
+    "isAppleAudioAccessory" : true,
+    "crowdSourcedLocation" : {
+      "positionType" : "lastConnected",
+      "verticalAccuracy" : -1,
+      "longitude" : 121.4294314532726,
+      "floorLevel" : -1,
+      "isInaccurate" : false,
+      "isOld" : false,
+      "horizontalAccuracy" : 35,
+      "latitude" : 31.199749474152924,
+      "timeStamp" : 1700828375287,
+      "altitude" : -1,
+      "locationFinished" : true
+    },
+    "groupIdentifier" : "6BBE2650-16F2-4CF8-9390-CBD11718AE43",
+    "role" : {
+      "name" : "Custom Name",
+      "emoji" : "😀",
+      "identifier" : 999
+    },
+    "systemVersion" : "61.3.0",
+    "name" : "Case"
+  }
+]

@@ -5,9 +5,10 @@ import tempfile
 import subprocess
 from path import *
 from flask_cors import CORS
-
+import threading
 
 app = Flask(__name__)
+lock = threading.Lock()
 CORS(app)
 @app.route('/api/download-video', methods=['OPTIONS'])
 def handle_preflight():
@@ -23,60 +24,61 @@ def handle_preflight():
 
 def receive_text():
 
-    
-    data = request.json
-
-    if 'download' in data:
-
-        audioformatID = data["download"]["audioformatID"]
-        videoformatID = data["download"]["videoformatID"]
-        VideoID = data["download"]["VideoID"]
-
+    with lock:
         
-        command = f"cd {videoDirectory} && yt-dlp -f ba+bv -f {audioformatID}+{videoformatID} '{VideoID}'"
+        data = request.json
 
-        
-        
-        print (command)
-        
-#        subprocess.run(f"cd {videoDirectory}",shell=True)
+        if 'download' in data:
 
-        fileName = subprocess.getoutput (f"yt-dlp --print filename -f ba+bv -f {audioformatID}+{videoformatID} '{VideoID}'")
-        subprocess.run(command ,shell=True)
-        
-        fileDirectory = videoDirectory+"/"+fileName
-        
-        
-        return send_file(fileDirectory, as_attachment=True, download_name=fileName)
-        
-    elif 'easydownload' in data:
+            audioformatID = data["download"]["audioformatID"]
+            videoformatID = data["download"]["videoformatID"]
+            VideoID = data["download"]["VideoID"]
 
-      
-        VideoID = data["easydownload"]["VideoID"]
+            
+            command = f"cd {videoDirectory} && yt-dlp -f ba+bv -f {audioformatID}+{videoformatID} '{VideoID}'"
 
-        
-#        command = f"cd {videoDirectory} && yt-dlp -f ba+bv -f {audioformatID}+{videoformatID} '{VideoID}'"
+            
+            
+            print (command)
+            
+    #        subprocess.run(f"cd {videoDirectory}",shell=True)
 
-        
-        command = f"cd {videoDirectory} && yt-dlp --format-sort vbr -f 'bestvideo[vcodec=avc1.640028]+bestaudio[ext=m4a]' '{VideoID}'"
-        
-        print (command)
-        
-#        subprocess.run(f"cd {videoDirectory}",shell=True)
+            fileName = subprocess.getoutput (f"yt-dlp --print filename -f ba+bv -f {audioformatID}+{videoformatID} '{VideoID}'")
+            subprocess.run(command ,shell=True)
+            
+            fileDirectory = videoDirectory+"/"+fileName
+            
+            
+            return send_file(fileDirectory, as_attachment=True, download_name=fileName)
+            
+        elif 'easydownload' in data:
 
-        fileName = subprocess.getoutput (f"yt-dlp --print filename -f 'bestvideo[vcodec=avc1.640028]+bestaudio[ext=m4a]' '{VideoID}'")
-        subprocess.run(command ,shell=True)
-        
-        fileDirectory = videoDirectory+"/"+fileName
-        return send_file(fileDirectory, as_attachment=True, download_name=fileName)
+          
+            VideoID = data["easydownload"]["VideoID"]
+
+            
+    #        command = f"cd {videoDirectory} && yt-dlp -f ba+bv -f {audioformatID}+{videoformatID} '{VideoID}'"
+
+            
+            command = f"cd {videoDirectory} && yt-dlp --format-sort vbr -f 'bestvideo[vcodec^=avc1]+bestaudio' '{VideoID}'"
+            
+            print (command)
+            
+    #        subprocess.run(f"cd {videoDirectory}",shell=True)
+
+            fileName = subprocess.getoutput (f"yt-dlp --print filename --format-sort vbr -f 'bestvideo[vcodec^=avc1]+bestaudio' '{VideoID}'")
+            subprocess.run(command ,shell=True)
+            
+            fileDirectory = videoDirectory+"/"+fileName
+            return send_file(fileDirectory, as_attachment=True, download_name=fileName)
 
 
 
 
 
 
-    else:
-        return {'error': 'Text field not found in request'}, 400
+        else:
+            return {'error': 'Text field not found in request'}, 400
 
 if __name__ == '__main__':
     app.run(host='192.168.124.15', port=5000, debug=True)
