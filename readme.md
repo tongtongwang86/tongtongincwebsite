@@ -28,13 +28,13 @@ chmod 700 CVSlogger.sh
 - [ ] youtube vid download ytdlp
 - [ ] modular backend script running
 - [ ] suggestion tracker
-- [ ] ai??
+- [x] ai??
 - [ ] ptable
 - [ ] citation generator
 - [ ] calculator
 - [ ] json not syncing with ejs webpage without restarting bug
 - [ ] weather
-- [ ] change log
+- [x] change log
 - [ ] members
 - [ ] members dashboard link to cloud
 ---done---
