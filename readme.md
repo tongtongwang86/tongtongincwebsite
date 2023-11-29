@@ -20,13 +20,13 @@ chmod 700 CVSlogger.sh
 
 ---To do---
 - [ ] revolute documentation
-- [ ] sync revolute
-- [ ] migrate mac onto server and fix track page
-- [ ] implement dolphin2.2
+- [x] sync revolute
+- [x] migrate mac onto server and fix track page
+- [x] implement dolphin2.2
 - [ ] render farm
 - [ ] one step further page
-- [ ] youtube vid download ytdlp
-- [ ] modular backend script running
+- [x] youtube vid download ytdlp
+- [x] modular backend script running
 - [ ] suggestion tracker
 - [x] ai??
 - [ ] ptable
