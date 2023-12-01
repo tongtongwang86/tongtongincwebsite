@@ -32,7 +32,7 @@ chmod 700 CVSlogger.sh
 - [ ] ptable
 - [ ] citation generator
 - [ ] calculator
-- [ ] json not syncing with ejs webpage without restarting bug
+- [x] json not syncing with ejs webpage without restarting bug
 - [ ] weather
 - [x] change log
 - [ ] members
