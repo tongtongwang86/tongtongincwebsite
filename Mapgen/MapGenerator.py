@@ -85,8 +85,13 @@ def formatCoord(serialNumber):
 
 
         for row in csv_reader:
-    
-            deltatime = latesttime-int((f'{row["locationtimestamp"]}'))
+            if row["locationtimestamp"] == "null":
+                continue
+            else:
+                
+                deltatime = latesttime-int((f'{row["locationtimestamp"]}'))
+
+                
             if line_count == 0:
                 line_count += 1
                 
