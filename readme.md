@@ -24,7 +24,7 @@ chmod 700 CVSlogger.sh
 - [x] migrate mac onto server and fix track page
 - [x] implement dolphin2.2
 - [ ] render farm
-- [ ] christmas theme
+- [x] christmas theme
 - [ ] one step further page
 - [x] youtube vid download ytdlp
 - [x] modular backend script running
