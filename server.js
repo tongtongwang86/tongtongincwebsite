@@ -1,6 +1,9 @@
 const express = require('express')
 const app = express()
 const { exec } = require("child_process");
+const path = require('path');
+const port = 8009
+
 
 app.use(express.static("public"))
 app.use(express.urlencoded({ extended: true}))
@@ -49,6 +52,22 @@ app.get('/3d',(req, res) => {
     res.render('3D/index')
 }) 
 
+app.use('/members/:username', (req, res, next) => {
+  // Extract the username parameter from the URL
+  const { username } = req.params;
+
+  // Build the path to the HTML file based on the username
+  const filePath = path.join('/mnt/cloud/mainstorage/owncloud/data',username, 'files/Website/index.html');
+    console.log(filePath);
+  // Serve the HTML file
+  res.sendFile(filePath, (err) => {
+    // If the file doesn't exist, pass control to the next middleware
+    if (err) {
+      next();
+    }
+  });
+});
+
 
 app.get('/clicker',(req, res) => {
     res.render('Clicker/index')
@@ -58,9 +77,6 @@ app.get('/videodownload',(req, res) => {
     res.render('Toolchain/VideoDownload/index')
 })
 
-app.get('/members/sally',(req, res) => {
-    res.render('Members/Sally')
-}) 
 
 
 app.get('/about',(req, res) => {
@@ -89,22 +105,29 @@ if (req.body.passWord == passwords){
 
 })
 
-function updatePerDay(){
+app.use((req, res, next) => {
+    res.render('Error/index')
+})
 
-    exec("python3 modules/changelog/gitlog.py", (error, stdout, stderr) => {
-        if (error) {
-            console.log(`error: ${error.message}`);
-            return;
-        }
-        if (stderr) {
-            console.log(`stderr: ${stderr}`);
-            return;
-        }
-       console.log(`${stdout}`);
-        
-    });
 
-}
+//function updatePerDay(){
+//
+//    exec("python3 modules/changelog/gitlog.py", (error, stdout, stderr) => {
+//        if (error) {
+//            console.log(`error: ${error.message}`);
+//            return;
+//        }
+//        if (stderr) {
+//            console.log(`stderr: ${stderr}`);
+//            return;
+//        }
+//       console.log(`${stdout}`);
+//        
+//    });
+//
+//}
+
+
 
 function updatePerMinute() {
     exec("python3 Mapgen/MapGenerator.py", (error, stdout, stderr) => {
@@ -134,19 +157,19 @@ function updatePerMinute() {
         console.log(`${stdout}`);
     });
     
-    exec("python3 Modules/ordertrack/appleordershippingstatus.py", (error, stdout, stderr) => {
-        if (error) {
-            console.log(`error: ${error.message}`);
-            return;
-        }
-        if (stderr) {
-            console.log(`stderr: ${stderr}`);
-            return;
-        }
-//        console.log(`stdout: ${stdout}`);
-        console.log(`${stdout}`);
-    });
-    
+//    exec("python3 Modules/ordertrack/appleordershippingstatus.py", (error, stdout, stderr) => {
+//        if (error) {
+//            console.log(`error: ${error.message}`);
+//            return;
+//        }
+//        if (stderr) {
+//            console.log(`stderr: ${stderr}`);
+//            return;
+//        }
+////        console.log(`stdout: ${stdout}`);
+//        console.log(`${stdout}`);
+//    });
+//    
     
     
     
@@ -156,10 +179,10 @@ function updatePerMinute() {
 
   updatePerMinute();
 
-  updatePerDay();
+//  updatePerDay();
 
   const interval = setInterval(updatePerMinute, 60000);
-  const intervalDay = setInterval(updatePerDay, 86400000);
+//  const intervalDay = setInterval(updatePerDay, 86400000);
 
 
 
@@ -182,6 +205,8 @@ function logger (req,res,next) {
 
 }
 
-app.listen(3000)
-
+//app.listen(3000)
+app.listen(port, () => {
+  console.log(`Example app listening on port ${port}`)
+})
 

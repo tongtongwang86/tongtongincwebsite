@@ -1,20 +1,22 @@
 <!-- The Side Bar -->
+<style>
+
+@font-face {
+    font-family: "Profbens";
+    src: url(https://tongtonginc.com/fonts/profbens-eaome.otf) ;
+}
+    </style>
+
 
 <aside aria-label="Sidebar" id="sidebar" class="d-flex flex-column align-items-end">
   <header class="profile-wrapper">
-    <a href="{{ '/' | relative_url }}" id="avatar" class="rounded-circle">
-      {% if site.avatar != empty and site.avatar %}
-        {% capture avatar_url %}
-            {% if site.avatar contains '://' %}
-              {{ site.avatar }}
-            {% elsif site.img_cdn != empty and site.img_cdn %}
-              {{ site.avatar | prepend: site.img_cdn }}
-            {% else %}
-              {{ site.avatar | relative_url }}
-            {% endif %}
-          {% endcapture %}
-        <img src="{{ avatar_url | strip }}" width="112" height="112" alt="avatar" onerror="this.style.display='none'">
-      {% endif %}
+      
+      
+    <a href="https://tongtonginc.com" style="width:100%;" >
+        <div style=" font-family: "Profbens";  font-weight: bold;" >
+            Tongtonginc.com
+
+            </div>
     </a>
 
     <h1 class="site-title">
@@ -61,7 +63,7 @@
 
     {% for entry in site.data.contact %}
       {% case entry.type %}
-        {% when 'github', 'twitter' %}
+        {% when 'github', %}
           {%- capture url -%}
             https://{{ entry.type }}.com/{{ site[entry.type].username }}
           {%- endcapture -%}
@@ -70,8 +72,7 @@
           {%- capture url -%}
             javascript:location.href = 'mailto:' + ['{{ email[0] }}','{{ email[1] }}'].join('@')
           {%- endcapture -%}
-        {% when 'rss' %}
-          {% assign url = '/feed.xml' | relative_url %}
+       
         {% else %}
           {% assign url = entry.url %}
       {% endcase %}

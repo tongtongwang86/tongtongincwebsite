@@ -65,11 +65,6 @@ def getlatestTime(filelocation,columninterest):
     specific_value = csv_reader.loc[total_rows, columninterest]
 
     return specific_value
-    # print (total_rows)
-    # print (specific_value)
-
-# print(getlatestTime('Mapgen/Airtags.csv',"locationtimestamp"))
-
 
 # below is a function to turn serial number input into coords scraped from cvs file lmao
 def formatCoord(serialNumber):
@@ -111,7 +106,7 @@ def formatCoord(serialNumber):
                     folium.PolyLine(
                     smooth_factor=3,
                     locations=coordinates,
-                    color=rgba_to_hex(hex_to_rgb(lineColor)[0]*opacity_gen(deltatime,opacityinterval), hex_to_rgb(lineColor)[1]*opacity_gen(deltatime,opacityinterval), hex_to_rgb(lineColor)[2]*opacity_gen(deltatime,opacityinterval), .7),
+                    color=rgba_to_hex(hex_to_rgb(lineColor)[0]*opacity_gen(deltatime,opacityinterval), hex_to_rgb(lineColor)[1]*opacity_gen(deltatime,opacityinterval), hex_to_rgb(lineColor)[2]*opacity_gen(deltatime,opacityinterval), 1),
                     weight=5,
                      popup=str(f'\t{row["name"]}'),
                     ))
@@ -154,7 +149,7 @@ looop = 0
 
 
 # Create a map
-m = folium.Map(tiles="cartodbdark_matter")
+m = folium.Map(tiles="openstreetmap")
 
 # Add markers and line to feature group instance n times
 for group in feature_groups:

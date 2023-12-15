@@ -107,3 +107,18 @@ Following the pinout diagram above, connect the two boards using the  <a href = 
 {: .prompt-warning }
 
 ## Final Assembly 
+![Desktop View](https://tongtonginc.com/images/Revolute/Documentation/isoassembly.png){: width="972" height="589" }
+
+
+
+- Assemble accoring to this diagram:
+    1. Base 3D print
+    2. Cap 3D print
+    3. V2.1 Ident magnets base
+    5. Cap pcb with encoder chip
+    6. Diametrically Magnetized magnet
+    7. V2.1 Ident magnets cap
+    8. Ball bearing
+    9. Rubber ring
+    10. Wire 
+
