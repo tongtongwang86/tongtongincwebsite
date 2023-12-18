@@ -20,25 +20,25 @@ chmod 700 CVSlogger.sh
 
 ---To do---
 - [ ] revolute documentation
-- [x] sync revolute
-- [x] migrate mac onto server and fix track page
-- [x] implement dolphin2.2
 - [ ] render farm
-- [x] christmas theme
 - [ ] one step further page
-- [x] youtube vid download ytdlp
-- [x] modular backend script running
 - [ ] suggestion tracker
-- [x] ai??
 - [ ] ptable
 - [ ] citation generator
 - [ ] calculator
-- [x] json not syncing with ejs webpage without restarting bug
 - [ ] weather
-- [x] change log
-- [ ] members
-- [ ] members dashboard link to cloud
 ---done---
+- [x] christmas theme
+- [x] sync revolute
+- [x] migrate mac onto server and fix track page
+- [x] implement dolphin2.2
+- [x] youtube vid download ytdlp
+- [x] modular backend script running
+- [x] ai??
+- [x] json not syncing with ejs webpage without restarting bug
+- [x] change log
+- [x] members
+- [x] members dashboard link to cloud
 - [x] Add last refresh time on website
 - [x] improve website aesthetics
 - [x] combine all 3 scripts into one
