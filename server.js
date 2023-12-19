@@ -52,12 +52,13 @@ app.get('/3d',(req, res) => {
     res.render('3D/index')
 }) 
 
-app.use('/members/:username', (req, res, next) => {
+app.use('/members/:username/:file', (req, res, next) => {
   // Extract the username parameter from the URL
-  const { username } = req.params;
+  const { username, file } = req.params;
 
   // Build the path to the HTML file based on the username
-  const filePath = path.join('/mnt/cloud/mainstorage/owncloud/data',username, 'files/Website/index.html');
+  const filePath = path.join(`/mnt/cloud/mainstorage/owncloud/data/${username}/files/Website/${file}.html`);
+
     console.log(filePath);
   // Serve the HTML file
   res.sendFile(filePath, (err) => {
